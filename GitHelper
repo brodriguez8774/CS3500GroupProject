@@ -9,12 +9,20 @@ Useful Links:
     Interactive Git Teacher:
         https://try.github.io/levels/1/challenges/1
 
+    Git Commit Standards:
+        http://chris.beams.io/posts/git-commit/
 
 
 Installation:
 
 Windows:
     Installer: https://git-scm.com/download/win
+
+    * Run Installer.
+    * Default components are fine.
+    * Select "Use Git from the Windows Command Prompt" if you want to be able to use git with the cmd terminal.
+      Otherwise, select "Use Git from Git Bash only" if you want to only have access to git from the git terminal.
+    * Defaults are fine for rest of install process.
 
 Linux:
     > sudo apt install git
