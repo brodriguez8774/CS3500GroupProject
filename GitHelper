@@ -1,0 +1,119 @@
+
+Getting Started:
+
+Useful Links:
+
+    Git Cheat Sheet:
+        https://www.git-tower.com/blog/git-cheat-sheet/
+
+    Interactive Git Teacher:
+        https://try.github.io/levels/1/challenges/1
+
+
+
+Installation:
+
+Windows:
+    Installer: https://git-scm.com/download/win
+
+Linux:
+    > sudo apt install git
+
+General:
+
+    Setup basic git configuration on new machine:
+        > git config --global user.name 'your name'
+        > git config --global user.email 'your email'
+        > git config --global core.editor 'PreferedTextEditor'
+          Note: Standard for windows is 'notepad'. For linux is 'nano'.
+        > git config --global push.default simple
+
+    Add a global gitignore file (optional, but very useful if you have multiple projects):
+        * Add ".gitignore_global" file to base git directory
+          (Default is user docs. You can find out your base directory by typing 'cd ~')
+        > git config --global core.excludesfile ~/.gitignore_global
+
+
+Creating/Connecting to a new repo:
+
+    To create a new local git repo:
+        > git init
+        * Include a README.md and .gitignore
+        > git add -A
+        > git commit -m "Initial commit"
+
+    Download from an online repo for the first time:
+        > git clone 'repo url'
+          If you're using bitbucket or github, this link is provided for you to simply copy/paste.
+		
+    To upload to a online repo for the first time:
+        > git remote add origin https://github.com/*AcountHere*/*ProjectNameHere*.git
+        > git push -u origin master
+
+
+
+Useful Commands:
+
+Command Line Navigation:
+
+    > ls
+        View folders and files within current location.
+
+    > ls -a
+        Same as ls, but also lists hidden files.
+
+    > cd *LocationHere*
+        Change location to indicated directory.
+
+
+Git Project Control:
+
+    > git init
+        Create new repository in given location.
+
+    > git pull
+        Pull any new changes from the cloud repository down onto your local repository.
+
+    > git push
+        Push any new changes from your local repository into the cloud repository.
+        Note: Please test your changes before pushing.
+
+
+Git Branching Commands:
+
+    > git branch
+        View all branches for project. Initially, you should only have a 'master'
+        branch until you create additional ones.
+
+    > git branch *BranchNameHere*
+        Create a new branch with the given name.
+        Note: Branch names are usually lowercase/camelcase.
+
+    > git checkout *BranchNameHere*
+        Transfer to indicated branch. All changes made will only be made to this branch.
+
+    > git merge *BranchNameHere*
+        Merges changes from indicated branch into current branch.
+        IE: If you want to merge in changes from 'development' into the 'master' branch:
+            * First, set your current branch as master.
+            * Next, type 'git merge development'
+            * Settle any merge conflicts, if any.
+              Otherwise, congragulations. Development has now merged into master!
+
+
+Tracking and Saving Changes:
+
+    > git status
+        View changed files within current repository.
+
+    > gitk
+        Bring up interface with details about changed files in repository.
+
+    > git add -A
+        Add all current changes to repository tracking.
+
+    > git commit
+        Commit all tracked changes to history. This essentially creates a "save point"
+        in your project's history, that you can go back to at any point.
+
+
