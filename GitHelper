@@ -108,6 +108,11 @@ Git Branching Commands:
             * Settle any merge conflicts, if any.
               Otherwise, congragulations. Development has now merged into master!
 
+    > git branch -d *BranchNameHere*
+        Delete the branch with the given name.
+        Note: If trying to delete a branch with uncommited changed, you will get a warning.
+            Use -D instead of -d in this case, and only do so if you're sure you want to delete the branch.
+
 
 Tracking and Saving Changes:
 
