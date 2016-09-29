@@ -129,4 +129,5 @@ Tracking and Saving Changes:
         Commit all tracked changes to history. This essentially creates a "save point"
         in your project's history, that you can go back to at any point.
 
-
+    > git reset --hard
+        Reset entire branch back to last commit state. Very useful if you mess up/break something.
