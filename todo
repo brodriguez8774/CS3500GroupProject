@@ -1,0 +1,32 @@
+Menu Items are pulled dynamically from the database (serverside)
+Users are handled by the database as well. Username, Password, email, address, placeholder for card info? (faster payment)
+
+pages: 
+	Menu page(s) Coffe, Tea? Baked goods?
+	About - Name, address, hours
+	home
+	user login page (or lightbox?)
+	user info/settings
+	order
+
+
+Directroy structure:
+	Root
+		Resources:
+			-static
+				-css
+				-images
+				-javascript
+		Pages:
+			-index.html
+			-user
+				-settings.html
+				-login.html
+			-about.html
+			-contact.html (phone number,email, P.o. box)
+			-order.html
+			-menu
+				-coffee.html
+				-tea.html
+				-bakery.html
+SASS
