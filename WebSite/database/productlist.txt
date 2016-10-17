@@ -1,0 +1,28 @@
+Options:
+	Doublecaf - Double tha caffeene for double the fun! +$0.25
+
+Products:
+	Name: Black Sea
+	Price: $1.50
+	Description: Dark as can be, this blend of coffeeis designed to kickstart your day like nothing else. Very powerful taste and kick, this drink is a caffene addict's dream.
+	Image: http://listsurge.com/wp-content/uploads/2016/02/featured-image-2.png
+
+	Name: Oolong Tea
+	Price: $2.50
+	Descprition: As simple as they come, the Oolong tea is a reminder to sit back once in a while and let your mind relax. Calm and soothing, the Oolong tea is good for late afternoon chats and mid-day 'you' time.
+	Image: http://www.teamajesty.com/wp-content/uploads/2014/03/Oolong-Tea-for-health.jpg
+
+	Name: Jasmine tea
+	Price: $3.00
+	Description: sweet and refreshing, the Jasmine tea is good for those who need to help their bodies and minds rejuvinate throughout the day. generally a soft alternitive the the other early-day wakeups, the Jasmine tea can be enjoyed throughout the day by those seeking a boost to wakefullness without the kick of coffee, or those wishing to breathe in some extra vitality.
+	Image: http://www.teamajesty.com/wp-content/uploads/2014/03/Jasmine-Tea-Caffeine-1024x682.jpg
+
+	Name: Peppermint Tea
+	Price: $2.75
+	Descrpition: Warm and powerful, this Peppermint is a true minty treat. Briskly cold and soothingly warm at the same time, this tea embodies everything we love about a good cup of tea in the winter.
+	Image: https://docakilah.files.wordpress.com/2011/05/pepperminthottea.jpg
+
+	Name: Cinnamon Roll
+	Price: $0.75, $1.00, $1.50
+	Description: The coffee shop classic is avalable in 3 sizes: Small, Medium and Large.
+	Image: http://www.cookingclassy.com/wp-content/uploads/2012/11/cinnamon+rolls6.jpg (Medium Shown)
