@@ -25,7 +25,9 @@ Directroy structure:
 				-menu-item.php
 			-index.php
 			-user
-				-settings.php
+				-settings.php?
+				-customer.php
+				-employee.php
 				-login.php
 			-about.php
 			-contact.php (phone number,email, P.o. box)
