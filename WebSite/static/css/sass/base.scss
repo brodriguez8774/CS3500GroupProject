@@ -1,0 +1,55 @@
+
+//*************************************************************************************************
+//*************************************************************************************************
+//*************************************************************************************************
+//***********************************Main CSS for overall site.************************************
+//*************************************************************************************************
+//**********************************If referenced needed,, see: ***********************************
+//     https://github.com/twitter/recess/blob/master/lib/lint/strict-property-order.js#L36
+//*************************************************************************************************
+//*************************************************************************************************
+//*************************************************************************************************
+
+
+
+// Use "//" comments in most circumstances. Block "/*  */" comments are reserved for when you want
+// to ensure the comments stays within the compiled css.
+//
+// When you do comment, limit line length to 100 characters.
+
+
+
+// CSS is split up into four main sections of function:
+//
+//    Positioning/Box-Model
+//    Typography
+//    Visual
+//    Other
+//
+// The css is divided into sections in an attempt to simplify and consolidate whate each chunk of
+// code is doing. The goal is to prevent having one single, massive css file and hopefully make
+// code easier to read.
+//
+// Subfiles are combined from human readible files into a single, standard, overbearing CSS file,
+// using the precompiler called SASS.
+
+
+
+// Tentative Overall z-index order:
+//
+// 1-20: Background/Main Body Elements
+// 21-40: Content Elements
+// 41-60: Nav Elements
+// 61-80: Other Elements (likely unneeded, but defined anyway)
+
+
+
+// Import Statements
+
+@import '_reset';
+@import '_body';
+@import '_header';
+@import '_footer';
+@import '_nav';
+@import '_content';
+

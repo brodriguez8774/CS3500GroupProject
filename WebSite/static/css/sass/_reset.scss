@@ -1,0 +1,38 @@
+
+// Reset base html elements. Ensures they're unison among all browsers.
+
+html, body, hgroup, header, footer, nav,
+article, section, aside, figure, figcaption,
+h1, h2, h3, h4, h5, h6,
+ol, ul, li,
+div, span, p, img, a,
+{
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+
+    vertical-align: baseline;
+    border: 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+h5 {
+    font-size: 105%;
+}
+

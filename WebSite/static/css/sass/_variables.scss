@@ -1,0 +1,63 @@
+
+//****************************************************************************************************
+//*********************************************Variables**********************************************
+//****************************************************************************************************
+
+// This file is used to declare variables which shall be added into most other .scss files.
+// Kept in a single place to allow for ease of maintaining.
+
+
+//**************************************************
+//START Color Block
+//**************************************************
+
+// GreyScale
+
+$color-black: #000;
+$color-greyDarkMore: #212121;
+$color-greyDark: #404040;
+$color-greyDarkLess: #616161;
+$color-grey: #808080;
+$color-greyLightLess: #a1a1a1;
+$color-greyLight: #bfbfbf;
+$color-greyLightMore: #e0e0e0;
+$color-white: #fff;
+
+//**************************************************
+//END Color Block
+//**************************************************
+
+//**************************************************
+//START Media Query Block
+//**************************************************
+
+// PHONE --- MIN: 0px, MAX: 767px
+$phone-mid: 550px;
+$phone-max: 767px;
+
+// TABLET --- MIN: 768px, MAX: 1023px
+$tablet-min: 768px;
+$tablet-mid: 896px;
+$tablet-max: 1023px;
+
+// LAPTOP --- MIN: 1024px, MAX: 1600px
+$laptop-min: 1024px;
+$laptop-mid: 1300px;
+$laptop-max: 1600px;
+
+// DESKTOP --- MIN: 1601px, MAX: inf
+$desktop-min: 1601px;
+
+//**************************************************
+//END Media Query Block
+//**************************************************
+
+//**************************************************
+//START Misc Block
+//**************************************************
+
+
+
+//**************************************************
+//END Misc Block
+//**************************************************
