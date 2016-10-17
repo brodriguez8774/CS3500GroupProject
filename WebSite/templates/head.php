@@ -8,4 +8,7 @@
   <link rel="shortcut icon" href="static/images/favicon.ico">
 
   <link rel="stylesheet" type="text/css" href="static/css/base.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 </head>
