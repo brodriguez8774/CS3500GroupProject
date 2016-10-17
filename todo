@@ -18,15 +18,17 @@ Directroy structure:
 				-images
 				-javascript
 		Pages:
-			-index.html
+			-index.php
 			-user
-				-settings.html
-				-login.html
-			-about.html
-			-contact.html (phone number,email, P.o. box)
-			-order.html
+				-settings.php
+				-login.php
+			-about.php
+			-contact.php (phone number,email, P.o. box)
+			-order.php
 			-menu
-				-coffee.html
-				-tea.html
-				-bakery.html
-SASS
+				-coffee.php
+				-tea.php
+				-bakery.php
+
+CSS Pre-Compiler:
+	SASS
