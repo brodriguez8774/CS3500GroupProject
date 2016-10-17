@@ -1,3 +1,3 @@
 <footer>
-  <p>Coffe Shop&copy;</p>
+  <p>Coffee Shop&copy;</p>
 </footer>

@@ -24,4 +24,70 @@ h4 {
 h5 {
   font-size: 105%; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+header {
+  width: 100%; }
+
+footer {
+  width: 100%; }
+
+nav {
+  width: 80%; }
+
+main {
+  flex-grow: 1;
+  width: 70%; }
+
+body {
+  background-color: #bfbfbf; }
+
+main {
+  background-color: #e0e0e0; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+
+header {
+  color: #fff; }
+
+header {
+  background-color: #212121; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+
+footer {
+  font-weight: bold;
+  color: #fff; }
+
+footer {
+  background-color: #212121; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around; }
+
+nav li {
+  font-weight: bold; }
+nav a {
+  color: #fff;
+  text-decoration: none; }
+nav a:visited {
+  color: #fff;
+  text-decoration: none; }
+
+nav {
+  background-color: #404040; }
+
+nav li {
+  list-style-type: none; }
+
 /*# sourceMappingURL=base.css.map */

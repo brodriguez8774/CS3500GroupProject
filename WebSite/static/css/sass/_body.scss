@@ -29,7 +29,32 @@
 //START ***** Block
 //**************************************************
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+nav {
+    width: 80%;
+}
+
+main {
+    flex-grow: 1;
+
+    width: 70%;
+}
 
 //**************************************************
 //END ***** Block
@@ -85,7 +110,13 @@
 //START ***** Block
 //**************************************************
 
+body {
+    background-color: $color-greyLight;
+}
 
+main {
+    background-color: $color-greyLightMore;
+}
 
 //**************************************************
 //END ***** Block
@@ -117,4 +148,3 @@
 //**************************************************
 //END ***** Block
 //**************************************************
-
