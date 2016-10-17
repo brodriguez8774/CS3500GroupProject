@@ -43,17 +43,29 @@ nav {
 
 main {
   flex-grow: 1;
-  width: 70%; }
+  width: 100%; }
 
 body {
   background-color: #bfbfbf; }
 
-main {
-  background-color: #e0e0e0; }
+header {
+  border-bottom: 2px solid #000; }
+
+nav {
+  border-bottom: 2px solid #000;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 5em; }
 
 header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px; }
+
+header .placeholder {
+  width: 10%; }
+header .login {
+  width: 10%; }
 
 header {
   color: #fff; }
@@ -63,18 +75,43 @@ header {
 
 footer {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  min-height: 40px; }
 
 footer {
   font-weight: bold;
   color: #fff; }
 
 footer {
-  background-color: #212121; }
+  background-color: #212121;
+  border-top: 2px solid #000; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25px; }
 
 nav ul {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; }
+nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+nav li li {
+  display: none; }
+
+nav {
+  color: #fff; }
 
 nav li {
   font-weight: bold; }
@@ -84,11 +121,38 @@ nav a {
 nav a:visited {
   color: #fff;
   text-decoration: none; }
+nav a:hover {
+  text-decoration: underline; }
+nav li ul {
+  display: flex;
+  flex-direction: column; }
 
 nav {
   background-color: #404040; }
 
 nav li {
   list-style-type: none; }
+
+main {
+  display: flex;
+  justify-content: space-between; }
+
+main .placeholder {
+  width: 16%; }
+main #content {
+  width: 68%;
+  padding: 5%; }
+
+main p {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+main p {
+  text-align: justify; }
+
+main #content {
+  background-color: #e0e0e0;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000; }
 
 /*# sourceMappingURL=base.css.map */

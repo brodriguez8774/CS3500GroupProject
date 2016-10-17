@@ -53,7 +53,7 @@ nav {
 main {
     flex-grow: 1;
 
-    width: 70%;
+    width: 100%;
 }
 
 //**************************************************
@@ -114,8 +114,19 @@ body {
     background-color: $color-greyLight;
 }
 
-main {
-    background-color: $color-greyLightMore;
+header {
+    border-bottom: 2px solid $color-black;
+}
+
+footer {
+
+}
+
+nav {
+    border-bottom: 2px solid $color-black;
+
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 5em;
 }
 
 //**************************************************

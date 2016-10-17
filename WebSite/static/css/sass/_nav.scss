@@ -30,10 +30,41 @@
 //**************************************************
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 25px;
+}
+
+nav {
 
     ul {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+
+        li {
+            display: none;
+        }
     }
 }
 
@@ -58,6 +89,10 @@ nav {
 //**************************************************
 
 nav {
+    color: $color-white;
+}
+
+nav {
 
     li {
         font-weight: bold;
@@ -73,6 +108,18 @@ nav {
         color: $color-white;
 
         text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    li {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
