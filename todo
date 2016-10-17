@@ -18,6 +18,11 @@ Directroy structure:
 				-images
 				-javascript
 		Pages:
+			-templates (include files)
+				-header.php
+				-footer.php
+				-nav.php
+				-menu-item.php
 			-index.php
 			-user
 				-settings.php
