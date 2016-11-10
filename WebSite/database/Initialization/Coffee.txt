@@ -19,14 +19,14 @@ INSERT INTO ingredient(name, flavor, coffee_id)
 VALUES
 /* Espresso 1 */
 ('Water', 0, 1),
-('Our Signature Blend of Coffe Beans', 0, 1),
+('Our Signature Blend of Coffee Beans', 0, 1),
 ('Caffeine Shot', 0, 1),
 ('Cream', 1, 1),
 ('Sugar', 1, 1),
 
 /* Macchiato 2 */
 ('Water', 0, 2),
-('Our Signature Blend of Coffe Beans', 0, 2),
+('Our Signature Blend of Coffee Beans', 0, 2),
 ('Caffeine Shot', 0, 2),
 ('Foamed Milk', 0, 2),
 ('Cream', 1, 2),
@@ -34,7 +34,7 @@ VALUES
 
 /* Latte 3 */
 ('Water', 0, 3),
-('Our Signature Blend of Coffe Beans', 0, 3),
+('Our Signature Blend of Coffee Beans', 0, 3),
 ('Caffeine Shot', 0, 3),
 ('Steamed Milk', 0, 3),
 ('Foamed Milk', 0, 3),
@@ -43,7 +43,7 @@ VALUES
 
 /* Mocha 4 */
 ('Water', 0, 4),
-('Our Signature Blend of Coffe Beans', 0, 4),
+('Our Signature Blend of Coffee Beans', 0, 4),
 ('Caffeine Shot', 0, 4),
 ('Steamed Milk', 0, 4),
 ('Chocolate', 0, 4),
@@ -52,7 +52,7 @@ VALUES
 
 /* Cappuccino 5 */
 ('Water', 0, 5),
-('Our Signature Blend of Coffe Beans', 0, 5),
+('Our Signature Blend of Coffee Beans', 0, 5),
 ('Caffeine Shot', 0, 5),
 ('Foamed Milk', 0, 5),
 ('Steamed Milk', 0, 5),
@@ -61,28 +61,28 @@ VALUES
 
 /* Americano 6 */
 ('Water', 0, 6),
-('Our Signature Blend of Coffe Beans', 0, 6),
+('Our Signature Blend of Coffee Beans', 0, 6),
 ('Caffeine Shot', 0, 6),
 ('Cream', 1, 6),
 ('Sugar', 1, 6),
 
 /* Ristretto 7 */
 ('Water', 0, 7),
-('Our Signature Blend of Coffe Beans', 0, 7),
+('Our Signature Blend of Coffee Beans', 0, 7),
 ('Caffeine Shot', 0, 7),
 ('Cream', 1, 7),
 ('Sugar', 1, 7),
 
 /* Doppio 8 */
 ('Water', 0, 8),
-('Our Signature Blend of Coffe Beans', 0, 8),
+('Our Signature Blend of Coffee Beans', 0, 8),
 ('Caffeine Shot', 0, 8),
 ('Cream', 1, 8),
 ('Sugar', 1, 8),
 
 /* Cafe Au Lait 9 */
 ('Water', 0, 9),
-('Our Signature Blend of Coffe Beans', 0, 9),
+('Our Signature Blend of Coffee Beans', 0, 9),
 ('Steamed Milk', 0, 9),
 ('Cream', 1, 9),
 ('Sugar', 1, 9);
