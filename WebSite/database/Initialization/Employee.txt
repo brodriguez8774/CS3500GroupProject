@@ -1,0 +1,18 @@
+
+/* Population values for Employee Table of CoffeeShop Database */
+
+
+INSERT INTO employee(store_id, emp_login_id, password, first_name, last_name, phone, address, city, state, zip)
+VALUES
+('1', 'Employee_1', 'password', 'Bob', 'Hardings', '2695554444', '465 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('1', 'Employee_2', '1234', 'Chompy', 'Evans', '2691112222', '123 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('2', 'Employee_3', 'MyPass', 'Kevin', 'Carols', '2691234567', '234 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('2', 'Employee_4', 'cleverPassHere', 'Sasha', 'Smith', '2691231234', '345 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('2', 'Employee_5', 'aaa', 'Sarah', 'Smithers', '2695555555', '456 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('1', 'Employee_6', '87cmk489', 'Ellen', 'Pantaleo', '5555555555', '1212 Centre Ave', 'Portage', 'MI', 49024),
+('3', 'Employee_7', 'correctbatteryhorsestaple', 'Sally', 'Barnes', '9259991210', '5133 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Employee_8', 'insecurepass', 'Bob', 'Jones', '9254565522', '4539 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
+('3', 'Employee_9', '1234567890', 'Jimmy', 'Jones', '9255291234', '5895 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
+('3', 'Employee_10', 'admin', 'Jimmy', 'Brown', '5554443333', '8193 Road Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Employee_11', 'generic', 'Steve', 'Johnson', '1234567890', '124 RoadLane Rd', 'Pleasanton', 'CA', 94588);
+
