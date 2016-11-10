@@ -1,41 +1,86 @@
-Menu Items are pulled dynamically from the database (serverside)
-Users are handled by the database as well. Username, Password, email, address, placeholder for card info? (faster payment)
 
-pages: 
-	Menu page(s) Coffe, Tea? Baked goods?
-	About - Name, address, hours
-	home
-	user login page (or lightbox?)
-	user info/settings
-	order
+Project TODO List
+
+TODO information, as well as general information for intended structure of site.
+
+
+TODO:
+
+    Database:
+        * Create image table with foreign keys to all food products.
+            * Includes img path, alt tag.
+        * Add email attribute to customers and employees
+        * Add hours attribute to store table.
+        * Add name attribute to store table? Is this redundant?
+        * Create triggers to assert that cust_login and emp_logins are never identical
+
+        Extra if time:
+            * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
+            * Possibly modify customer and employee tables so that employees are an extension of customers, with extra fields?
+
+    Pages: 
+        * Populate home page.
+	    * Create Menu page(s) based off of database values:
+            * Coffee
+            * Tea
+            * Baked goods
+	    * Create About Page
+            * Include data from stores database.
+            * Contact page. Possibly same page? Possibly seperate?
+	    * Create user login page (preferably via lightbox).
+	    * Create user info/settings pages, only accessible once logged in.
+	
+        Extra if time:
+            * Create order online page.
+            * Possibly have extra pages for employees, including pages for viewing of individual customer data.
+
+    General:
+        * Find and save images for all food products.
+            * Probably organize folder structure the same as database structure
+        * Determine pleasing colorpallete so site is not pure greyscale.
+        * Implement security and sessions/cookies/serialization/etc.
 
 
 Directroy structure:
+
 	Root
 		Resources:
-			-static
-				-css
-				-images
-				-javascript
-		Pages:
-			-templates (include files)
-				-header.php
-				-footer.php
-				-nav.php
-				-menu-item.php
-			-index.php
-			-user
-				-settings.php?
-				-customer.php
-				-employee.php
-				-login.php
-			-about.php
-			-contact.php (phone number,email, P.o. box)
-			-order.php
-			-menu
-				-coffee.php
-				-tea.php
-				-bakery.php
+			- static
+				- css
+                    - sass
+				- images
+				- javascript
+            - xampp
+                - All files from default xampp project, as reference incase needed.
 
-CSS Pre-Compiler:
-	SASS
+		Pages:
+			- templates (include files)
+				- header.php
+				- footer.php
+				- nav.php
+				- menu-item.php
+            - menu
+				- coffee.php
+				- tea.php
+				- bakery.php
+			- user
+				- settings.php?
+				- customer.php
+				- employee.php
+				- login.php
+            - index.php
+			- about.php
+			- contact.php (phone number,email, P.o. box)
+			- order.php
+
+        Database:
+            - Initialization
+                - All necessary files to build and construct the database from scratch
+            - Any database connection handling and loading files.
+
+
+Misc:
+
+    * CSS Pre-Compiler:
+    	* SASS
+
