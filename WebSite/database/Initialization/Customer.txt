@@ -1,0 +1,30 @@
+
+/* Population values for Customer Table of CoffeeShop Database */
+
+
+INSERT INTO customer(store_id, cust_login_id, password, first_name, last_name, phone, address, city, state, zip)
+VALUES
+('1', 'Customer_1', 'kljsd', 'Timmy', 'Evans', '1231112222', '1234 Test Ln', 'Portage', 'MI', 49024),
+('1', 'Customer_2', 'asdg', 'Jeanette', 'McGalliger', '1232223333', '2345 Test Ln', 'Portage', 'MI', 49024),
+('1', 'Customer_3', 'etrhg', 'Jason', 'Smith', '1233334444', '3456 Test Ln', 'Portage', 'MI', 49024),
+('1', 'Customer_4', 'dgare', 'Pedro', 'Smith', '1234445555', '4567 Test Ln', 'Portage', 'MI', 49024),
+('1', 'Customer_5', 'wtjf', 'Francisco', 'Jane', '1235556666', '5678 Test Ln', 'Portage', 'MI', 49024),
+('2', 'Customer_6', 'hjetjsdf', 'Carroll', 'Tethers', '1236667777', '6789 Test Ln', 'Portage', 'MI', 49024),
+('2', 'Customer_7', 'rewyh', 'Bert', 'Jennings', '1237778888', '7890 Test Ln', 'Portage', 'MI', 49024),
+('2', 'Customer_8', 'adhjtw', 'Jane', 'Loh', '1239990000', '9876 Test Rd', 'Portage', 'MI', 49024),
+('2', 'Customer_9', 'jwrta', 'Jenny', 'Cardozo', '2341112222', '8765 Test Rd', 'Portage', 'MI', 49024),
+('2', 'Customer_10', 'aaa', 'Shirley', 'Beeson', '2342223333', '7654 Test Rd', 'Portage', 'MI', 49024),
+('3', 'Customer_11', 'aherh', 'Ricky', 'Caldwell', '2343334444', '5984 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Customer_12', '1234', 'Norman', 'Mattiacci', '2344445555', '2094 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Customer_13', '4236', 'Emilio', 'Vessot', '2345556666', '1029 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Customer_14', 'sfhsd', 'Ben', 'Hayman', '2346667777', '0942 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('3', 'Customer_15', 'wrhsf', 'Iris', 'Samuel', '2347778888', '0949 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('2', 'Customer_16', 'hjsrt', 'Evelyn', 'Savett', '2348889999', '6543 Test Rd', 'Portage', 'MI', 49024),
+('2', 'Customer_17', 'rehe', 'Deborah', 'Ames', '2349990000', '5432 Test Rd', 'Portage', 'MI', 49024),
+('1', 'Customer_18', 'herhe', 'Pam', 'Battson', '3451112222', '4321 Test Rd', 'Portage', 'MI', 49024),
+('1', 'Customer_19', 'erewh', 'Annie', 'Decker', '3452223333', '3210 Test Rd', 'Portage', 'MI', 49024),
+('1', 'Customer_20', 'wthsf', 'Aubry', 'Wheatly', '3453334444', '1948 Aaa Rd', 'Portage', 'MI', 49024),
+('1', 'Customer_21', 'htrhjs', 'Kenny', 'Cantor', '3454445555', '5985 Aaa Rd', 'Portage', 'MI', 49024),
+('3', 'Customer_22', 'erhwg', 'Alicia', 'Boggs', '3455556666', '3509 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('2', 'Customer_23', 'wrhss', 'Jimmy', 'Lovison', '3456667777', '9085 Aaa Rd', 'Portage', 'MI', 49024);
+
