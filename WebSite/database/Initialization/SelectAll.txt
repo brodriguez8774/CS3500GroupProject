@@ -1,0 +1,11 @@
+
+/* Select statements for all CoffeeShop database tables. */
+
+SELECT * FROM baked_good;
+SELECT * FROM coffee;
+SELECT * FROM customer;
+SELECT * FROM employee;
+SELECT * FROM ingredient;
+SELECT * FROM store;
+SELECT * FROM tea;
+

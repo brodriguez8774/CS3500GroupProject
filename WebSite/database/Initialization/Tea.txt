@@ -4,10 +4,10 @@
 
 INSERT INTO tea(name, description, price)
 VALUES
-('Black Tea', "Designed to kickstart your day like nothing else. Very powerful taste and kick, this drink is a caffene addict's dream." , 1.50),
-('Oolong Tea', 'As simple as they come, the Oolong tea is a reminder to sit back once in a while and let your mind relax. Calm and soothing, for when you want to relax.', 2.50),
+('Black Tea', 'Very powerful taste and kick, designed to kickstart your day like nothing else.' , 1.50),
+('Oolong Tea', 'As simple as they come, our Oolong tea is a reminder to sit back once in a while and let your mind relax.', 2.50),
 ('Jasmine Tea', 'Sweet and refreshing. Perfect to rejuvinate your mind body and mind throughout the day.', 3.00),
-('Peppermint Tea', 'Warm and powerful, this Peppermint is a true minty treat. Embodies everything we love about a good cup of tea in the winter.', 2.75),
+('Peppermint Tea', 'Warm and powerful, this Peppermint is a true minty treat.', 2.75),
 ('White Tea', 'Delicate and elegant, with hints of earthier elements, such as almonds.', 1.50),
 ('Green Tea', "Has a more 'vegative' or 'leafy' taste. Has many health benefits, and tastes great to boot.", 2.50),
 ('Earl Grey Tea', 'Smokey and fragrant, with hints of citrus. A subcategory of our fine black teas.', 2.00),

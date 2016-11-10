@@ -52,7 +52,7 @@ CREATE TABLE ingredient (
         REFERENCES  tea(tea_id)
         ON DELETE CASCADE,
     FOREIGN KEY     (bake_id)
-        REFERENCES  baked_goods(bake_id)
+        REFERENCES  baked_good(bake_id)
         ON DELETE CASCADE
 );
 
