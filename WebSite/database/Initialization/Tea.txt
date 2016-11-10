@@ -1,0 +1,74 @@
+
+/* Population values for Tea Table of CoffeeShop Database */
+
+
+INSERT INTO tea(name, description, price)
+VALUES
+('Black Tea', "Designed to kickstart your day like nothing else. Very powerful taste and kick, this drink is a caffene addict's dream." , 1.50),
+('Oolong Tea', 'As simple as they come, the Oolong tea is a reminder to sit back once in a while and let your mind relax. Calm and soothing, for when you want to relax.', 2.50),
+('Jasmine Tea', 'Sweet and refreshing. Perfect to rejuvinate your mind body and mind throughout the day.', 3.00),
+('Peppermint Tea', 'Warm and powerful, this Peppermint is a true minty treat. Embodies everything we love about a good cup of tea in the winter.', 2.75),
+('White Tea', 'Delicate and elegant, with hints of earthier elements, such as almonds.', 1.50),
+('Green Tea', "Has a more 'vegative' or 'leafy' taste. Has many health benefits, and tastes great to boot.", 2.50),
+('Earl Grey Tea', 'Smokey and fragrant, with hints of citrus. A subcategory of our fine black teas.', 2.00),
+('Jasmine Tea', 'One of the most fragrant and flavorful tea blends around. Perfect for the end of a long day.', 2.25);
+
+
+INSERT INTO ingredient(name, flavor, tea_id)
+VALUES
+/* Black Tea 1 */
+('Black Tea Leaves', 0, 1),
+('Water', 0, 1),
+('Sugar', 1, 1),
+('Milk', 1, 1),
+('Honey', 1, 1),
+
+/* Oolong Tea 2 */
+('Oolong Tea Leaves', 0, 2),
+('Water', 0, 2),
+('Sugar', 1, 2),
+('Milk', 1, 2),
+('Honey', 1, 2),
+
+/* Jasmine Tea 3 */
+('Jasmine Tea Leaves', 0, 3),
+('Water', 0, 3),
+('Sugar', 1, 3),
+('Milk', 1, 3),
+('Honey', 1, 3),
+
+/* Peppermint Tea 4 */
+('Peppermint Tea Leaves', 0, 4),
+('Water', 0, 4),
+('Sugar', 1, 4),
+('Milk', 1, 4),
+('Honey', 1, 4),
+
+/* White Tea 5 */
+('White Tea Leaves', 0, 5),
+('Water', 0, 5),
+('Sugar', 1, 5),
+('Milk', 1, 5),
+('Honey', 1, 5),
+
+/* Green Tea 6 */
+('Green Tea Leaves', 0, 6),
+('Water', 0, 6),
+('Sugar', 1, 6),
+('Milk', 1, 6),
+('Honey', 1, 6),
+
+/* Earl Grey Tea 7 */
+('Earl Grey Tea Leaves', 0, 7),
+('Water', 0, 7),
+('Sugar', 1, 7),
+('Milk', 1, 7),
+('Honey', 1, 7),
+
+/* Jasmine Tea 8 */
+('Jasmine Tea Leaves', 0, 8),
+('Water', 0, 8),
+('Sugar', 1, 8),
+('Milk', 1, 8),
+('Honey', 1, 8);
+

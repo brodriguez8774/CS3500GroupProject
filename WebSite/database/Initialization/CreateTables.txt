@@ -1,0 +1,53 @@
+
+/* Create Table Statements for CoffeeShop Database */
+
+
+CREATE DATABASE IF NOT EXISTS coffee_shop;
+USE coffee_shop;
+
+
+DROP TABLES IF EXISTS ingredient, coffee, tea, baked_good;
+
+
+CREATE TABLE baked_good (
+    bake_id         INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(50),
+    description     VARCHAR(200),
+    price           DECIMAL(10, 2)
+);
+
+
+CREATE TABLE coffee (
+    coffee_id       INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(50),
+    description     VARCHAR(200),
+    price           DECIMAL(10, 2)
+);
+
+
+CREATE TABLE tea (
+    tea_id          INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(50),
+    description     VARCHAR(200),
+    price           DECIMAL(10, 2)
+);
+
+
+CREATE TABLE ingredient (
+    ingr_id         INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(50),
+    flavor          BOOL NOT NULL,
+    bake_id         INT NULL,
+    coffee_id       INT NULL,
+    tea_id          INT NULL,
+    FOREIGN KEY     (coffee_id)
+        REFERENCES  coffee(coffee_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY     (tea_id)
+        REFERENCES  tea(tea_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY     (bake_id)
+        REFERENCES  baked_goods(bake_id)
+        ON DELETE CASCADE
+);
+

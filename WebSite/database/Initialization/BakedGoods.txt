@@ -1,0 +1,84 @@
+
+/* Population values for Baked Goods Table of CoffeeShop Database */
+
+
+INSERT INTO baked_good(name, description, price)
+VALUES
+('Cinnamon Roll', 'A coffee shop classic. A sweet flakey roll with our patented cinnamon icing. Simply melts in your mouth.', 1.75),
+('Danish', 'A flakey pastry with fresh, sweet fruits baked in. A great way to start your day.', 2.00),
+('Croissant', 'Like a danish, but skip the fruits. Great for someone on the go.', 1.50),
+('Fresh Muffin', 'Our delectable muffins are always warm and fresh. Comes in Plain, Blueberry, Banana Nut, or Triple Chocolate.', 1.10),
+('Fresh Cookie', "Baked fresh every day, you can't go wrong. Comes in Sugar, Snickerdoodle, Chocolate chip, and Oatmeal.", 0.85),
+('Scone', 'Similar to our muffins, but lighter and softer.', 1.10),
+('Biscotti', 'Italian almond buscuits, twice-baked for a delightfully crunchy texture.', 1.25);
+
+
+INSERT INTO ingredient(name, flavor, bake_id)
+VALUES
+/* Cinnamon Roll 1 */
+('Flour', 0, 1),
+('Eggs', 0, 1),
+('Sugar', 0, 1),
+('Milk', 0, 1),
+('Butter', 0, 1),
+('Salt', 0, 1),
+('Yeast', 0, 1),
+('Cinnamon', 0, 1),
+
+/* Danish 2 */
+('Flour', 0, 2),
+('Eggs', 0, 2),
+('Sugar', 0, 2),
+('Milk', 0, 2),
+('Butter', 0, 2),
+('Salt', 0, 2),
+('Vanilla Extract', 0, 2),
+
+/* Croissant 3 */
+('Flour', 0, 3),
+('Eggs', 0, 3),
+('Sugar', 0, 3),
+('Butter', 0, 3),
+('Vegetable Oil', 0, 3),
+('Salt', 0, 3),
+('Yeast', 0, 3),
+
+/* Fresh Muffin 4 */
+('Flour', 0, 4),
+('Eggs', 0, 4),
+('Brown Sugar', 0, 4),
+('Butter', 0, 4),
+('Baking Powder', 0, 4),
+('Baking Soda', 0, 4),
+('Salt', 0, 4),
+('Blueberries', 1, 4),
+('Bananas', 1, 4),
+('Various Nuts', 1, 4),
+('Chocolate', 1, 4),
+
+/* Fresh Cookie 5 */
+('Eggs', 0, 5),
+('Flour', 0, 5),
+('Sugar', 0, 5),
+('Butter', 0, 5),
+('Cinnamon', 1, 5),
+('Chocolate', 1, 5),
+('Oatmeal', 1, 5),
+
+/* Scone 6 */
+('Eggs', 0, 6),
+('Flour', 0, 6),
+('Milk', 0, 6),
+('Sugar', 0, 6),
+('Butter', 0, 6),
+('Baking Powder', 0, 6),
+
+/* Biscotti 7 */
+('Eggs', 0, 7),
+('Flour', 0, 7),
+('Sugar', 0, 7),
+('Baking Powder', 0, 7),
+('Salt', 0, 7),
+('Vanillia Extract', 0, 7),
+('Almond Extract', 0, 7);
+
