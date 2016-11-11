@@ -1,0 +1,11 @@
+
+/* Describe statements for all CoffeeShop database tables. */
+
+DESCRIBE baked_good;
+DESCRIBE coffee;
+DESCRIBE customer;
+DESCRIBE employee;
+DESCRIBE ingredient;
+DESCRIBE store;
+DESCRIBE tea;
+
