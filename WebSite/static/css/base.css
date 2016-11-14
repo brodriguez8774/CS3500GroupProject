@@ -138,9 +138,11 @@ main {
   justify-content: space-between; }
 
 main .placeholder {
-  width: 16%; }
+  width: 15%;
+  min-width: 100px; }
 main #content {
-  width: 68%;
+  width: 60%;
+  min-width: 500px;
   padding: 5%; }
 
 main p {
