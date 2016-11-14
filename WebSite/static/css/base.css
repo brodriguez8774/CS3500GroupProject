@@ -111,12 +111,12 @@ nav li li {
   display: none; }
 
 nav {
-  color: #D59D69; }
+  color: #D5B169; }
 
 nav li {
   font-weight: bold; }
 nav a {
-  color: #D59D69;
+  color: #D5B169;
   text-decoration: none; }
 nav a:hover {
   text-decoration: underline; }
@@ -125,7 +125,7 @@ nav li ul {
   flex-direction: column; }
 
 nav {
-  background-color: #a2836e; }
+  background-color: #A35F31; }
 
 nav li {
   list-style-type: none; }
