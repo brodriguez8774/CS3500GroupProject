@@ -37,6 +37,9 @@ TODO:
             * Possibly have extra pages for employees, including pages for viewing of individual customer data.
 
     General:
+        * Mobile css.
+        * See if php can set css path to be absolute.
+            Short of that, see if php can override parent php includes, similarly to Django's blocks.
         * Find and save images for all food products.
             * Probably organize folder structure the same as database structure
         * Determine pleasing colorpallete so site is not pure greyscale.
