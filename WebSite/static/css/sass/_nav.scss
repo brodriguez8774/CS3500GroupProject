@@ -89,7 +89,7 @@ nav {
 //**************************************************
 
 nav {
-    color: #D5B169;
+    color: $color-link;
 }
 
 nav {
@@ -99,7 +99,7 @@ nav {
     }
 
     a {
-    	color: #D5B169;
+    	color: $color-link;
         text-decoration: none;
     }
 
@@ -149,7 +149,7 @@ nav {
 //**************************************************
 
 nav {
-    background-color: #A35F31;
+    background-color: $color-nav;
 }
 
 nav {

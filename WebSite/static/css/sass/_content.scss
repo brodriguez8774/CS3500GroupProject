@@ -143,11 +143,10 @@ main {
 main {
 
     #content {
-        background-color: #9F7732;
-        //background-color: $color-white;
+        background-color: $color-body;
 
-        border-right: 2px solid $color-black;
-        border-left: 2px solid $color-black;
+        border-right: 2px solid $color-borders;
+        border-left: 2px solid $color-borders;
     }
 }
 

@@ -76,7 +76,9 @@ main {
 //START ***** Block
 //**************************************************
 
-
+body {
+    color: $color-text;
+}
 
 //**************************************************
 //END ***** Block
@@ -111,11 +113,11 @@ main {
 //**************************************************
 
 body {
-    background-color: #5E451A;
+    background-color: $color-margins;
 }
 
 header {
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-borders;
 }
 
 footer {
@@ -123,7 +125,7 @@ footer {
 }
 
 nav {
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-borders;
 
     border-bottom-right-radius: 5em;
     border-bottom-left-radius: 5em;

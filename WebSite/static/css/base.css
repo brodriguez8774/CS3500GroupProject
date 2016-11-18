@@ -46,7 +46,10 @@ main {
   width: 100%; }
 
 body {
-  background-color: #5E451A; }
+  color: #000; }
+
+body {
+  background-color: #5e451a; }
 
 header {
   border-bottom: 2px solid #000; }
@@ -68,7 +71,7 @@ header .login {
   width: 10%; }
 
 header {
-  color: #F2D6A7; }
+  color: #f2d6a7; }
 
 header {
   background-color: #674d3c; }
@@ -81,7 +84,7 @@ footer {
 
 footer {
   font-weight: bold;
-  color: #F2D6A7; }
+  color: #f2d6a7; }
 
 footer {
   background-color: #674d3c;
@@ -111,12 +114,12 @@ nav li li {
   display: none; }
 
 nav {
-  color: #D5B169; }
+  color: #d5b169; }
 
 nav li {
   font-weight: bold; }
 nav a {
-  color: #D5B169;
+  color: #d5b169;
   text-decoration: none; }
 nav a:hover {
   text-decoration: underline; }
@@ -125,7 +128,7 @@ nav li ul {
   flex-direction: column; }
 
 nav {
-  background-color: #A35F31; }
+  background-color: #a35f31; }
 
 nav li {
   list-style-type: none; }
@@ -150,7 +153,7 @@ main p {
   text-align: justify; }
 
 main #content {
-  background-color: #9F7732;
+  background-color: #9f7732;
   border-right: 2px solid #000;
   border-left: 2px solid #000; }
 

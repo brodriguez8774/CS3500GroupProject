@@ -60,7 +60,7 @@ footer {
 footer {
     font-weight: bold;
 
-    color: #F2D6A7;
+    color: $color-title2;
 }
 
 //**************************************************
@@ -96,9 +96,9 @@ footer {
 //**************************************************
 
 footer {
-    background-color: #674d3c;
+    background-color: $color-header;
 
-    border-top: 2px solid $color-black;
+    border-top: 2px solid $color-borders;
 }
 
 //**************************************************
