@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<?php
+<html lang="en">
+<head>
+
+  <?php
+    // Ensure encoding type for document is utf-8.
+    header('Content-type: text/html; charset=utf-8');
 
     // Sets base url for all links.
     global $baseUrl;    
     $baseUrl = 'http://127.0.0.1/';
-?>
+  ?>
 
-<html lang="en">
-<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
