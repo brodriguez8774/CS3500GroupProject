@@ -46,7 +46,7 @@ main {
   width: 100%; }
 
 body {
-  color: #000; }
+  color: #0d0b06; }
 
 body {
   background-color: #bf8d36; }
@@ -71,10 +71,10 @@ header .login {
   width: 10%; }
 
 header {
-  color: #fff; }
+  color: #fcce7e; }
 
 header {
-  background-color: #211913; }
+  background-color: #21140a; }
 
 footer {
   display: flex;
@@ -84,10 +84,10 @@ footer {
 
 footer {
   font-weight: bold;
-  color: #fff; }
+  color: #f2b955; }
 
 footer {
-  background-color: #211913;
+  background-color: #21140a;
   border-top: 2px solid #000; }
 
 nav {
@@ -114,12 +114,12 @@ nav li li {
   display: none; }
 
 nav {
-  color: #fff; }
+  color: #f2b955; }
 
 nav li {
   font-weight: bold; }
 nav a {
-  color: #fff;
+  color: #f2b955;
   text-decoration: none; }
 nav a:hover {
   text-decoration: underline; }
@@ -151,9 +151,11 @@ main p {
 
 main p {
   text-align: justify; }
+main a {
+  color: #211c10; }
 
 main #content {
-  background-color: #e0a846;
+  background-color: #e0ab4f;
   border-right: 2px solid #000;
   border-left: 2px solid #000; }
 
