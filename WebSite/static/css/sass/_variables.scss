@@ -25,16 +25,38 @@ $color-white: #fff;
 
 
 // Color-Background
-$color-header: #674d3c;
-$color-nav: #a35f31;
-$color-body: #9f7732;
-$color-margins: #5e451a;
+
+//$color-header: #674d3c;
+//$color-header: $color-greyDarkMore;
+$color-header: #211913;
+
+//$color-nav: #a35f31;
+//$color-nav: $color-greyDark;
+$color-nav: #59341b;
+
+//$color-body: #9f7732;
+//$color-body: $color-greyLightMore;
+$color-body: #e0a846;
+
+//$color-margins: #5e451a;
+//$color-margins: $color-greyLight;
+$color-margins: #bf8d36;
+
+//$color-borders: $color-black;
 $color-borders: $color-black;
 
+
 // Color-Font
-$color-title1: #f2d6a7;
-$color-title2: #f2d6a7;
-$color-link: #d5b169;
+//$color-title1: #f2d6a7;
+$color-title1: $color-white;
+
+//$color-title2: #f2d6a7;
+$color-title2: $color-white;
+
+//$color-link: #d5b169;
+$color-link: $color-white;
+
+//$color-text: $color-black;
 $color-text: $color-black;
 
 //**************************************************
