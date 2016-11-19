@@ -1,0 +1,36 @@
+
+Installation:
+
+    * apachefriends.org/download.html
+
+Linux:
+    * Go to apachefriends.org/download.html and download the appropriate version.
+    * Open a terminal and change to the direcory you downloaded to.
+    > chmod 755 xampp-linux-*-installer.run
+    > sudo ./xampp-linux-*-installer.run
+        Note: With the above two commands, the asterisk is version dependent. Should match the one you downloaded.
+
+
+General:
+
+    Accessing the Xampp GUI
+        > cd /opt/lampp
+        * Run one of two commands, depending on your install. EITHER:
+            > sudo ./manager-linux.run
+            OR
+            > sudo ./manager-linux-x64.run
+
+    Changing Xampp root directory
+        * Open Xampp GUI
+        * Go to "Manage Servers" tab
+        * Select "Apache Web Server" and click "Configure"
+        * Click "Open Conf File"
+        * Scroll down until you find the following two lines (about halfway)
+            DocumentRoot "/opt/lampp/htdocs"
+            <Directory "/opt/lampp/htdocs">
+        * Change these two lines to your current project directory. IE:
+            DocumentRoot "/home/*UserNameHere*/Projects/CS3500/"
+            <Directory "/home/*UserNameHere*/Projects/CS3500/">
+        * Save file and exit back to the Xampp GUI Servers window.
+        * Attempt to start/restart "Apache Web Server" (changes will not take place unless server is turned off and back on)
+

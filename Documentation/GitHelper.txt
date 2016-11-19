@@ -64,70 +64,79 @@ Useful Commands:
 
 Command Line Navigation:
 
-    > ls
-        View folders and files within current location.
+    View folders and files within current location.
+        > ls
 
-    > ls -a
-        Same as ls, but also lists hidden files.
+    Same as ls, but also lists hidden files.
+        > ls -a
 
-    > cd *LocationHere*
-        Change location to indicated directory.
+    Change location to indicated directory.
+        > cd *LocationHere*
 
 
 Git Project Control:
 
-    > git init
-        Create new repository in given location.
+    Create new repository in given location.
+        > git init
 
-    > git pull
-        Pull any new changes from the cloud repository down onto your local repository.
+    Pull any new changes from the cloud repository down onto your local repository.
+        > git pull
 
-    > git push
-        Push any new changes from your local repository into the cloud repository.
-        Note: Please test your changes before pushing.
+
+    Push any new changes from your local repository into the cloud repository.
+    Note: Please test your changes before pushing.
+        > git push
+
 
 
 Git Branching Commands:
 
-    > git branch
-        View all branches for project. Initially, you should only have a 'master'
-        branch until you create additional ones.
+    View all branches for project. Initially, you should only have a 'master'
+    branch until you create additional ones.
+        > git branch
 
-    > git branch *BranchNameHere*
-        Create a new branch with the given name.
-        Note: Branch names are usually lowercase/camelcase.
+    Create a new branch with the given name.
+    Note: Branch names are usually lowercase/camelcase.
+        > git branch *BranchNameHere*
 
-    > git checkout *BranchNameHere*
-        Transfer to indicated branch. All changes made will only be made to this branch.
+    Transfer to indicated branch. All changes made will only be made to this branch.
+        > git checkout *BranchNameHere*
 
-    > git merge *BranchNameHere*
-        Merges changes from indicated branch into current branch.
+    Merges changes from indicated branch into current branch.
+        > git merge *BranchNameHere*
         IE: If you want to merge in changes from 'development' into the 'master' branch:
             * First, set your current branch as master.
             * Next, type 'git merge development'
             * Settle any merge conflicts, if any.
               Otherwise, congragulations. Development has now merged into master!
 
-    > git branch -d *BranchNameHere*
-        Delete the branch with the given name.
+    Delete the branch with the given name.
+        > git branch -d *BranchNameHere*
         Note: If trying to delete a branch with uncommited changed, you will get a warning.
             Use -D instead of -d in this case, and only do so if you're sure you want to delete the branch.
 
 
 Tracking and Saving Changes:
 
-    > git status
-        View changed files within current repository.
+    View changed files within current repository.
+        > git status
 
-    > gitk
-        Bring up interface with details about changed files in repository.
+    Bring up interface with details about changed files in repository.
+        > gitk
 
-    > git add -A
-        Add all current changes to repository tracking.
+    Add all current changes to repository tracking.
+        > git add -A
 
-    > git commit
-        Commit all tracked changes to history. This essentially creates a "save point"
-        in your project's history, that you can go back to at any point.
+    Commit all tracked changes to history. This essentially creates a "save point"
+    in your project's history, that you can go back to at any point.
+        > git commit
 
-    > git reset --hard
-        Reset entire branch back to last commit state. Very useful if you mess up/break something.
+    Reset entire branch back to last commit state. Very useful if you mess up/break something.
+        > git reset --hard
+
+    Tell git to assume unchanged (needs to be done on a per-repo basis)
+        > git update-index --assume-unchanged *filename*
+
+    Undo above command (also needs to be done per-repo)
+        > git update-index --no-assume-unchanged *filename*
+

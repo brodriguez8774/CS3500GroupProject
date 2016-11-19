@@ -1,0 +1,55 @@
+
+Installation:
+
+Linux:
+    > sudo apt-get install mysql-server
+    * Will be prompted to input login information.
+    * In a development environment, defaults should be fine (IE user is "root" password is "").
+    * If any issues occur for any reason, try reinstalling with a password, instead of leaving field blank.
+
+
+General:
+
+    Test if SQL Server is running
+        > sudo netstat -tap | grep mysql
+
+    Restart SQL Server if not running
+        > sudo systemctl restart mysql.service
+
+    Stop SQL Server
+        > sudo systemctl stop mysql.service
+
+    Connect to SQL Server
+        > mysql -u root -p
+
+    Load databases from datadump file
+        * Change to directory of datadump file.
+        > mysql < *filename*.sql
+
+
+    SQL commands, once connected to server
+
+        Create Database
+            > CREATE DATABASE *name*;
+
+        Show Database
+            > SHOW DATABASES;
+
+        Delete database
+            > DROP DATABASE IF EXISTS *databasename*;
+
+        Select database to view/perform operations on
+            > USE *database name*;
+
+        Create Table within selected database
+            > CREATE TABLE *name*;
+
+        Show Tables within selected database
+            > SHOW TABLES
+
+        Show column information of a table, within selected database
+            > DESCRIBE *table name*;
+            
+        Delete table
+            > DROP TABLE IF EXISTS *tablename*;
+

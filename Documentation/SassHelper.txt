@@ -1,0 +1,20 @@
+
+Getting Started:
+
+    * ruby-lang.org/en/
+
+
+Installation:
+
+Linux:
+    > sudo apt install ruby-sass
+
+
+General:
+
+    Check Sass version
+		> sass -version
+
+    Watch folder
+		> sass --watch *InputLocation*:*OutputLocation*
+
