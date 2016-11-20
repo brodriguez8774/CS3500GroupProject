@@ -1,6 +1,9 @@
 
 /* Select statements for all CoffeeShop database tables. */
 
+USE coffee_shop;
+
+SELECT * FROM address;
 SELECT * FROM baked_good;
 SELECT * FROM coffee;
 SELECT * FROM customer;

@@ -6,7 +6,7 @@ CREATE DATABASE IF NOT EXISTS coffee_shop;
 USE coffee_shop;
 
 
-DROP TABLES IF EXISTS ingredient, coffee, tea, baked_good, employee, customer, store;
+DROP TABLES IF EXISTS ingredient, coffee, tea, baked_good, employee, customer, store, address;
 /*
 DROP TRIGGER IF EXISTS unique_emp_login_insert_trigger, unique_emp_login_update_trigger;
 DROP TRIGGER IF EXISTS unique_cust_login_insert_trigger, unique_cust_login_update_trigger;
@@ -57,12 +57,22 @@ CREATE TABLE ingredient (
 );
 
 
-CREATE TABLE store (
-    store_id        INT PRIMARY KEY AUTO_INCREMENT,
-    address         VARCHAR(100) NOT NULL,
+CREATE TABLE address (
+    addr_id         INT PRIMARY KEY AUTO_INCREMENT,
+    street          VARCHAR(100) NOT NULL,
     city            VARCHAR(50) NOT NULL,
     state           VARCHAR(2) NOT NULL,
     zip             INT NOT NULL
+);
+
+
+CREATE TABLE store (
+    store_id        INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(100),
+    addr_id         INT NOT NULL,
+    FOREIGN KEY     (addr_id)
+        REFERENCES  address(addr_id)
+        ON DELETE CASCADE
 );
 
 
@@ -74,12 +84,12 @@ CREATE TABLE employee (
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
     phone           VARCHAR(10) NOT NULL,
-    address         VARCHAR(100) NOT NULL,
-    city            VARCHAR(50) NOT NULL,
-    state           VARCHAR(2) NOT NULL,
-    zip             INT NOT NULL,
+    addr_id         INT NOT NULL,
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY     (addr_id)
+        REFERENCES  address(addr_id)
         ON DELETE CASCADE
 );
 
@@ -92,12 +102,12 @@ CREATE TABLE customer (
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
     phone           VARCHAR(10) NOT NULL,
-    address         VARCHAR(100) NOT NULL,
-    city            VARCHAR(50) NOT NULL,
-    state           VARCHAR(2) NOT NULL,
-    zip             INT NOT NULL,
+    addr_id         INT NOT NULL,
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY     (addr_id)
+        REFERENCES  address(addr_id)
         ON DELETE CASCADE
 );
 

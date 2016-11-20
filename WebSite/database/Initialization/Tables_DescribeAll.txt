@@ -1,6 +1,7 @@
 
 /* Describe statements for all CoffeeShop database tables. */
 
+DESCRIBE address;
 DESCRIBE baked_good;
 DESCRIBE coffee;
 DESCRIBE customer;

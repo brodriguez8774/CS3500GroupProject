@@ -37,4 +37,3 @@
                           WHERE store.store_id = employee.store_id;";
 
 ?>
-

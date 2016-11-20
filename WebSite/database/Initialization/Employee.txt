@@ -2,17 +2,17 @@
 /* Population values for Employee Table of CoffeeShop Database */
 
 
-INSERT INTO employee(store_id, emp_login_id, password, first_name, last_name, phone, address, city, state, zip)
+INSERT INTO employee(store_id, emp_login_id, password, first_name, last_name, phone, addr_id)
 VALUES
-('1', 'Employee_1', 'password', 'Bob', 'Hardings', '2695554444', '465 HappyEmployee Ln', 'Portage', 'MI', 49024),
-('1', 'Employee_2', '1234', 'Chompy', 'Evans', '2691112222', '123 HappyEmployee Ln', 'Portage', 'MI', 49024),
-('2', 'Employee_3', 'asdgw34', 'Kevin', 'Carols', '2691234567', '234 HappyEmployee Ln', 'Portage', 'MI', 49024),
-('2', 'Employee_4', 'dsgaasd', 'Sasha', 'Smith', '2691231234', '345 HappyEmployee Ln', 'Portage', 'MI', 49024),
-('2', 'Employee_5', 'aaa', 'Sarah', 'Smithers', '2695555555', '456 HappyEmployee Ln', 'Portage', 'MI', 49024),
-('1', 'Employee_6', '87cmk489', 'Ellen', 'Pantaleo', '5555555555', '1212 Centre Ave', 'Portage', 'MI', 49024),
-('3', 'Employee_7', 'caeaf', 'Sally', 'Barnes', '9259991210', '5133 Aaa Rd', 'Pleasanton', 'CA', 94588),
-('3', 'Employee_8', 'i43gd', 'Bob', 'Jones', '9254565522', '4539 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
-('3', 'Employee_9', '123gadf', 'Jimmy', 'Jones', '9255291234', '5895 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
-('3', 'Employee_10', 'a4tdg', 'Jimmy', 'Brown', '5554443333', '8193 Road Rd', 'Pleasanton', 'CA', 94588),
-('3', 'Employee_11', 'ghwrh', 'Steve', 'Johnson', '1234567890', '124 RoadLane Rd', 'Pleasanton', 'CA', 94588);
+('1', 'Employee_1', 'password', 'Bob', 'Hardings', '2695554444', 4),
+('1', 'Employee_2', '1234', 'Chompy', 'Evans', '2691112222', 5),
+('2', 'Employee_3', 'asdgw34', 'Kevin', 'Carols', '2691234567', 6),
+('2', 'Employee_4', 'dsgaasd', 'Sasha', 'Smith', '2691231234', 7),
+('2', 'Employee_5', 'aaa', 'Sarah', 'Smithers', '2695555555', 8),
+('1', 'Employee_6', '87cmk489', 'Ellen', 'Pantaleo', '5555555555', 9),
+('3', 'Employee_7', 'caeaf', 'Sally', 'Barnes', '9259991210', 10),
+('3', 'Employee_8', 'i43gd', 'Bob', 'Jones', '9254565522', 11),
+('3', 'Employee_9', '123gadf', 'Jimmy', 'Jones', '9255291234', 12),
+('3', 'Employee_10', 'a4tdg', 'Jimmy', 'Brown', '5554443333', 13),
+('3', 'Employee_11', 'ghwrh', 'Steve', 'Johnson', '1234567890', 14);
 

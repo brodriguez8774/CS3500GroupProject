@@ -1,0 +1,43 @@
+
+/* Population Values for Address Table of CoffeeShop Database */
+
+INSERT INTO address(street, city, state, zip)
+VALUES
+('123 StreeName Dr', 'Portage', 'MI', 49024),
+('456 LongRoad St', 'Portage', 'MI', 49024),
+('1011 ADrive Ln', 'Pleasanton', 'CA', 94588),
+('465 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('123 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('234 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('345 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('456 HappyEmployee Ln', 'Portage', 'MI', 49024),
+('1212 Centre Ave', 'Portage', 'MI', 49024),
+('5133 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('4539 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
+('5895 ThisIsAPlace Ln', 'Pleasanton', 'CA', 94588),
+('8193 Road Rd', 'Pleasanton', 'CA', 94588),
+('124 RoadLane Rd', 'Pleasanton', 'CA', 94588),
+('1234 Test Ln', 'Portage', 'MI', 49024),
+('2345 Test Ln', 'Portage', 'MI', 49024),
+('3456 Test Ln', 'Portage', 'MI', 49024),
+('4567 Test Ln', 'Portage', 'MI', 49024),
+('5678 Test Ln', 'Portage', 'MI', 49024),
+('6789 Test Ln', 'Portage', 'MI', 49024),
+('7890 Test Ln', 'Portage', 'MI', 49024),
+('9876 Test Rd', 'Portage', 'MI', 49024),
+('8765 Test Rd', 'Portage', 'MI', 49024),
+('7654 Test Rd', 'Portage', 'MI', 49024),
+('5984 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('2094 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('1029 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('0942 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('0949 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('6543 Test Rd', 'Portage', 'MI', 49024),
+('5432 Test Rd', 'Portage', 'MI', 49024),
+('4321 Test Rd', 'Portage', 'MI', 49024),
+('3210 Test Rd', 'Portage', 'MI', 49024),
+('1948 Aaa Rd', 'Portage', 'MI', 49024),
+('5985 Aaa Rd', 'Portage', 'MI', 49024),
+('3509 Aaa Rd', 'Pleasanton', 'CA', 94588),
+('9085 Aaa Rd', 'Portage', 'MI', 49024);
+

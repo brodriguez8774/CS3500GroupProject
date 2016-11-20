@@ -2,9 +2,9 @@
 /* Population values for Store Table of CoffeeShop Database */
 
 
-INSERT INTO store(address, city, state, zip)
+INSERT INTO store(name, addr_id)
 VALUES
-('123 StreeName Dr', 'Portage', 'MI', 49024),
-('456 LongRoad St', 'Portage', 'MI', 49024),
-('1011 ADrive Ln', 'Pleasanton', 'CA', 94588);
+('', 1),
+('', 2),
+('Cali CoffeeShop', 3);
 
