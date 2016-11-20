@@ -7,7 +7,7 @@
     header('Content-type: text/html; charset=utf-8');
 
     // Sets base url for all links.
-    global $baseUrl;    
+    global $baseUrl;
     $baseUrl = 'http://127.0.0.1/';
   ?>
 
