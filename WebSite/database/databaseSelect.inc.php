@@ -22,18 +22,21 @@
 
     # Load store data from store table.
     $sqlSelectStore = "SELECT *
-                       FROM store;";
+                       FROM address, store
+                       WHERE address.addr_id = store.addr_id;";
 
 
     # Load customer all related person tables.
     $sqlSelectCustomer = "SELECT *
-                          FROM store, customer
-                          WHERE store.store_id = customer.store_id;";
+                          FROM address, store, customer
+                          WHERE store.store_id = customer.store_id AND
+                          address.addr_id = customer.addr_id;";
 
 
     # Load employee all related person tables.
     $sqlSelectEmployee = "SELECT *
-                          FROM store, employee
-                          WHERE store.store_id = employee.store_id;";
+                          FROM address, store, employee
+                          WHERE store.store_id = employee.store_id AND
+                          address.addr_id = employee.addr_id;";
 
 ?>
