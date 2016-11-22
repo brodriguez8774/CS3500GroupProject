@@ -7,11 +7,16 @@
   </tr>
   <?php
     while ($foodRow = $foodList->fetch()) {
-      echo "<tr>";
-        echo "<td>" . $foodRow['name'] . "</td>";
-        echo "<td>" . $foodRow['description'] . "</td>";
-        echo "<td>" . $foodRow['price'] . "</td>";
-      echo "</tr>";
+      echo "<div class='menuItem'>";
+        echo "<div class='menuItemHeader'>";
+          echo "<p>" . $foodRow['name'] . "</p>";
+          echo "<p>" . $foodRow['price'] . "</p>";
+        echo "</div>";
+        echo "<div class='menuItemBody'>";
+          echo "<img src='.." . $foodRow['img_dir'] . "' alt='" . $foodRow['name'] . "'>";
+          echo "<p>" . $foodRow['description'] . "</p>";
+        echo "</div>";
+      echo "</div>";
     }
   ?>
 </table>

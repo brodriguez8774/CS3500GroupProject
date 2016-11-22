@@ -4,13 +4,13 @@
 
 INSERT INTO tea(name, description, price, img_dir)
 VALUES
-('Black Tea', 'Very powerful taste and kick, designed to kickstart your day like nothing else.' , 1.50, '/static/tea/Black.jpg'),
-('Oolong Tea', 'As simple as they come, our Oolong tea is a reminder to sit back once in a while and let your mind relax.', 2.50, '/static/tea/Oolong.jpg'),
-('Jasmine Tea', 'Sweet and refreshing. Perfect to rejuvinate your mind body and mind throughout the day.', 2.25, '/static/tea/Jasmine.jpg'),
-('Peppermint Tea', 'Warm and powerful, this Peppermint is a true minty treat.', 2.75, '/static/tea/Peppermint.jpg'),
-('White Tea', 'Delicate and elegant, with hints of earthier elements, such as almonds.', 1.50, '/static/tea/White.jpg'),
-('Green Tea', "Has a more 'vegative' or 'leafy' taste. Has many health benefits, and tastes great to boot.", 2.50, '/static/tea/Green.jpg'),
-('Earl Grey Tea', 'Smokey and fragrant, with hints of citrus. A subcategory of our fine black teas.', 2.00, '/static/tea/EarlGrey.jpg');
+('Black Tea', 'Very powerful taste and kick, designed to kickstart your day like nothing else.' , 1.50, '/static/images/tea/Black.jpg'),
+('Oolong Tea', 'As simple as they come, our Oolong tea is a reminder to sit back once in a while and let your mind relax.', 2.50, '/static/images/tea/Oolong.jpg'),
+('Jasmine Tea', 'Sweet and refreshing. Perfect to rejuvinate your mind body and mind throughout the day.', 2.25, '/static/images/tea/Jasmine.jpg'),
+('Peppermint Tea', 'Warm and powerful, this Peppermint is a true minty treat.', 2.75, '/static/images/tea/Peppermint.jpg'),
+('White Tea', 'Delicate and elegant, with hints of earthier elements, such as almonds.', 1.50, '/static/images/tea/White.jpg'),
+('Green Tea', "Has a more 'vegative' or 'leafy' taste. Has many health benefits, and tastes great to boot.", 2.50, '/static/images/tea/Green.jpg'),
+('Earl Grey Tea', 'Smokey and fragrant, with hints of citrus. A subcategory of our fine black teas.', 2.00, '/static/images/tea/EarlGrey.jpg');
 
 
 INSERT INTO ingredient(name, flavor, tea_id)
