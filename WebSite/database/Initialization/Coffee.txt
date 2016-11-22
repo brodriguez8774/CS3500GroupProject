@@ -2,17 +2,17 @@
 /* Population values for Coffee Table of CoffeeShop Database */
 
 
-INSERT INTO coffee(name, description, price)
+INSERT INTO coffee(name, description, price, img_dir)
 VALUES
-('Espresso', 'A small shot of caffeine, but more than enough to get the job done.', 3.45),
-('Macchiato', 'A shot of caffeine with a heavenly touch of foamed milk.', 3.60),
-('Latte', 'Some espresso mixed with rich steamed milk and a dallop of foamed milk.', 3.75),
-('Mocha', 'Our patented blend of espresso, chocolate, and milk. Prefect if you want something sweet.', 3.75),
-('Cappuccino', 'Equal parts espresso, foamed milk, and steamed milk.', 3.65),
-('Americano', 'Like espresso, but with double the standard amount of water. Perfect if you want something that lasts.', 3.00),
-('Ristretto', 'A concentrated shot of espresso. Straight and to the point.', 3.00),
-('Doppio', 'An espresso with double the caffeine. Great for those extra early mornings.', 3.75),
-('Cafe Au Lait', 'For those that just want straight coffee with milk. No espresso. No complications.', 2.50);
+('Espresso', 'A small shot of caffeine, but more than enough to get the job done.', 3.45, '/static/coffee/Espresso.jpg'),
+('Macchiato', 'A shot of caffeine with a heavenly touch of foamed milk.', 3.60, '/static/coffee/Macchiato.jpg'),
+('Latte', 'Some espresso mixed with rich steamed milk and a dallop of foamed milk.', 3.75, '/static/coffee/Latte.jpg'),
+('Mocha', 'Our patented blend of espresso, chocolate, and milk. Prefect if you want something sweet.', 3.75, '/static/coffee/Mocha.jpg'),
+('Cappuccino', 'Equal parts espresso, foamed milk, and steamed milk.', 3.65, '/static/coffee/Cappuccino.jpg'),
+('Americano', 'Like espresso, but with double the standard amount of water. Perfect if you want something that lasts.', 3.00, '/static/coffee/Americano.jpg'),
+('Ristretto', 'A concentrated shot of espresso. Straight and to the point.', 3.00, '/static/coffee/Ristretto.jpg'),
+('Doppio', 'An espresso with double the caffeine. Great for those extra early mornings.', 3.75, '/static/coffee/Doppio.jpg'),
+('Cafe Au Lait', 'For those that just want straight coffee with milk. No espresso. No complications.', 2.50, '/static/coffee/CafeAuLait.jpg');
 
 
 INSERT INTO ingredient(name, flavor, coffee_id)

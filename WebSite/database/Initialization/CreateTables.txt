@@ -18,7 +18,8 @@ CREATE TABLE baked_good (
     bake_id         INT PRIMARY KEY AUTO_INCREMENT,
     name            VARCHAR(50),
     description     VARCHAR(200),
-    price           DECIMAL(10, 2)
+    price           DECIMAL(10, 2),
+    img_dir         VARCHAR(50)
 );
 
 
@@ -26,7 +27,8 @@ CREATE TABLE coffee (
     coffee_id       INT PRIMARY KEY AUTO_INCREMENT,
     name            VARCHAR(50),
     description     VARCHAR(200),
-    price           DECIMAL(10, 2)
+    price           DECIMAL(10, 2),
+    img_dir         VARCHAR(50)
 );
 
 
@@ -34,7 +36,8 @@ CREATE TABLE tea (
     tea_id          INT PRIMARY KEY AUTO_INCREMENT,
     name            VARCHAR(50),
     description     VARCHAR(200),
-    price           DECIMAL(10, 2)
+    price           DECIMAL(10, 2),
+    img_dir         VARCHAR(50)
 );
 
 
