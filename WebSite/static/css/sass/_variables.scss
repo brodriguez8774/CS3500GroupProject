@@ -24,8 +24,7 @@ $color-greyLightMore: #e0e0e0;
 $color-white: #fff;
 
 
-// Color-Background
-
+// Background Color
 //$color-header: #674d3c;
 //$color-header: $color-greyDarkMore;
 $color-header: #21140a;
@@ -46,7 +45,7 @@ $color-margins: #bf8d36;
 $color-borders: $color-black;
 
 
-// Color-Font
+// Font Color
 //$color-title1: #f2d6a7;
 //$color-title1: $color-white;
 $color-title1: #fcce7e;
@@ -61,6 +60,15 @@ $color-link: #211c10;
 
 //$color-text: $color-black;
 $color-text: #0d0b06;
+
+
+// Menu Color
+$menu-back: $color-margins;
+$menu-header: $color-title1;
+$menu-header-back: $color-header;
+$menu-body-back: $color-body;
+$menu-description: $color-title1;
+$menu-border: $color-nav;
 
 //**************************************************
 //END Color Block

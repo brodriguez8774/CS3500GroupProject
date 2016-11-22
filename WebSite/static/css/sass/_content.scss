@@ -36,14 +36,17 @@ main {
 
 main {
     .placeholder {
-        width: 15%;
+        width: 10%;
 		min-width: 100px;
     }
 
     #content {
-        width: 60%;
+        width: 80%;
 		min-width: 500px;
-        padding: 5%;
+        padding-top: 20px;
+        padding-right: 3%;
+        padding-bottom: 20px;
+        padding-left: 3%;
     }
 }
 
@@ -67,13 +70,58 @@ main {
 //**************************************************
 
 //**************************************************
-//START ***** Block
+//START Menu Block
 //**************************************************
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.menu {
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+
+        margin: 5px;
+        max-width: 45%;
+    }
+
+    .menu-item-header {
+        display: flex;
+        justify-content: space-between;
+
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .menu-item-body {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .menu-item-body {
+
+        img {
+            max-width: 30%;
+        }
+
+        p {
+            padding-right: 10px;
+            padding-left: 20px;
+        }
+    }
+}
 
 //**************************************************
-//END ***** Block
+//END Menu Block
 //**************************************************
 
 //*************************************************************************************************
@@ -107,13 +155,24 @@ main {
 //**************************************************
 
 //**************************************************
-//START ***** Block
+//START Menu Block
 //**************************************************
 
+.menu-title {
+    font-size: 300%;
+    text-align: center;
+}
 
+.menu {
+
+    .menu-item-header {
+        font-weight: bold;
+        color: $menu-header;
+    }
+}
 
 //**************************************************
-//END ***** Block
+//END Menu Block
 //**************************************************
 
 //*************************************************************************************************
@@ -169,13 +228,41 @@ main {
 //**************************************************
 
 //**************************************************
-//START ***** Block
+//START Menu Block
 //**************************************************
 
+.menu-item {
+    background-color: $menu-back;
 
+    //border-right: 1px solid $menu-border;
+    border-bottom: 2px solid $menu-border;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15px;
+}
+
+.menu {
+
+    .menu-item-header {
+        background-color: $menu-header-back;
+
+        border-bottom: 3px solid $menu-header;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .menu-item-body {
+
+        img {
+            border: 2px solid $menu-border;
+            border-radius: 50%;
+        }
+    }
+}
 
 //**************************************************
-//END ***** Block
+//END Menu Block
 //**************************************************
 
 //*************************************************************************************************

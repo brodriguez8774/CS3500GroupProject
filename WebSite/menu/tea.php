@@ -19,7 +19,7 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
-      <h2>Tea Menu</h2>
+      <h2 class="menu-title">Tea Menu</h2>
       <?php
         include "../templates/menuItem.inc.php";
       ?>
