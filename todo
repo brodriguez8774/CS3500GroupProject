@@ -5,7 +5,6 @@ Project TODO List -- TODO information, as well as general information for intend
 TODO:
 
     Database:
-        * Add hours attribute to store table.
         
         Extra if time:
             * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
@@ -15,8 +14,6 @@ TODO:
     Pages: 
         * Populate home page.
 	    * Create About Page
-            * Include data from stores database.
-            * Contact page. Possibly same page? Possibly seperate?
 	    * Create user login page (preferably via lightbox).
 	    * Create user info/settings pages, only accessible once logged in.
 	
