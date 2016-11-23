@@ -5,5 +5,8 @@
     if (isset($foodList)) {
         $foodList = null;
     }
+    if (isset($storeList)) {
+        $storeList = null;
+    }
 ?>
 

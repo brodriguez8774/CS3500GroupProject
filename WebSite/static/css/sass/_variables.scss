@@ -12,7 +12,6 @@
 //**************************************************
 
 // GreyScale
-
 $color-black: #000;
 $color-greyDarkMore: #212121;
 $color-greyDark: #404040;
@@ -25,40 +24,17 @@ $color-white: #fff;
 
 
 // Background Color
-//$color-header: #674d3c;
-//$color-header: $color-greyDarkMore;
 $color-header: #21140a;
-
-//$color-nav: #a35f31;
-//$color-nav: $color-greyDark;
 $color-nav: #59341b;
-
-//$color-body: #9f7732;
-//$color-body: $color-greyLightMore;
 $color-body: #e0ab4f;
-
-//$color-margins: #5e451a;
-//$color-margins: $color-greyLight;
 $color-margins: #bf8d36;
-
-//$color-borders: $color-black;
 $color-borders: $color-black;
 
 
 // Font Color
-//$color-title1: #f2d6a7;
-//$color-title1: $color-white;
 $color-title1: #fcce7e;
-
-//$color-title2: #f2d6a7;
-//$color-title2: $color-white;
 $color-title2: #f2b955;
-
-//$color-link: #d5b169;
-//$color-link: $color-black;
 $color-link: #211c10;
-
-//$color-text: $color-black;
 $color-text: #0d0b06;
 
 
@@ -69,6 +45,13 @@ $menu-header-back: $color-header;
 $menu-body-back: $color-body;
 $menu-description: $color-title1;
 $menu-border: $color-nav;
+
+
+// Contact Location Color
+$contact-header: $color-title1;
+$contact-back: $color-header;
+$contact-row-even: $color-margins;
+$contact-row-odd: $color-body;
 
 //**************************************************
 //END Color Block

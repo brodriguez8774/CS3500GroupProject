@@ -216,6 +216,32 @@ main p {
   padding-right: 10px;
   padding-left: 20px; }
 
+.location {
+  width: 100%;
+  max-width: 600px;
+  padding-top: 10px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto; }
+
+.location .location-header {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px; }
+.location div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px; }
+.location p {
+  padding: 0; }
+
 main p {
   text-align: justify; }
 main a {
@@ -227,6 +253,13 @@ main a {
 
 .menu .menu-item-header {
   font-weight: bold;
+  color: #fcce7e; }
+
+.contact-title {
+  font-size: 300%;
+  text-align: center; }
+
+.location .location-header {
   color: #fcce7e; }
 
 main #content {
@@ -250,5 +283,24 @@ main #content {
 .menu .menu-item-body img {
   border: 2px solid #59341b;
   border-radius: 50%; }
+
+.contact-title {
+  font-size: 300%;
+  text-align: center; }
+
+.location {
+  background-color: #21140a;
+  border-radius: 10px; }
+
+.location div {
+  display: flex;
+  justify-content: space-between; }
+.location div:nth-child(2n+2) {
+  background-color: #bf8d36; }
+.location div:nth-child(2n+3) {
+  background-color: #e0ab4f; }
+.location div:last-child {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px; }
 
 /*# sourceMappingURL=base.css.map */
