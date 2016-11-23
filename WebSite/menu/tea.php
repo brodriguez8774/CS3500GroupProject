@@ -30,4 +30,7 @@
     include "../templates/footer.php";
   ?>
 </body>
+<?php
+  include "../database/databaseClose.inc.php";
+?>
 </html>
