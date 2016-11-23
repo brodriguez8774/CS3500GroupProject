@@ -109,8 +109,16 @@ main {
 
     .menu-item-body {
 
-        img {
+        div {
             max-width: 30%;
+        }
+
+        div {
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         p {
