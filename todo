@@ -5,29 +5,20 @@ Project TODO List -- TODO information, as well as general information for intend
 TODO:
 
     Database:
-        * Remove Jasmine duplicate from tea table.
-        * Create image table with foreign keys to all food products.
-            * Includes img path, alt tag.
-        * Add email attribute to customers and employees
         * Add hours attribute to store table.
-        * Create triggers to assert that cust_login and emp_logins are never identical
-
+        
         Extra if time:
             * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
             * Possibly modify customer and employee tables so that employees are an extension of customers, with extra fields?
+            * If not extending, create triggers to assert that cust_login and emp_logins are never identical
 
     Pages: 
         * Populate home page.
-	    * Create Menu page(s) based off of database values:
-            * Coffee
-            * Tea
-            * Baked goods
 	    * Create About Page
             * Include data from stores database.
             * Contact page. Possibly same page? Possibly seperate?
 	    * Create user login page (preferably via lightbox).
 	    * Create user info/settings pages, only accessible once logged in.
-		* Get the dropdown nav menu working
 	
         Extra if time:
             * Create order online page.
@@ -35,8 +26,6 @@ TODO:
 
     General:
         * Mobile css.
-        * Find and save images for all food products.
-            * Probably organize folder structure the same as database structure
         * Implement security and sessions/cookies/serialization/etc.
 
 
