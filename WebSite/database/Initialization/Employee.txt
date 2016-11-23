@@ -2,17 +2,17 @@
 /* Population values for Employee Table of CoffeeShop Database */
 
 
-INSERT INTO employee(store_id, emp_login_id, password, first_name, last_name, phone, addr_id)
+INSERT INTO employee(store_id, emp_login_id, password, first_name, last_name, addr_id, phone, email)
 VALUES
-('1', 'Employee_1', 'password', 'Bob', 'Hardings', '2695554444', 4),
-('1', 'Employee_2', '1234', 'Chompy', 'Evans', '2691112222', 5),
-('2', 'Employee_3', 'asdgw34', 'Kevin', 'Carols', '2691234567', 6),
-('2', 'Employee_4', 'dsgaasd', 'Sasha', 'Smith', '2691231234', 7),
-('2', 'Employee_5', 'aaa', 'Sarah', 'Smithers', '2695555555', 8),
-('1', 'Employee_6', '87cmk489', 'Ellen', 'Pantaleo', '5555555555', 9),
-('3', 'Employee_7', 'caeaf', 'Sally', 'Barnes', '9259991210', 10),
-('3', 'Employee_8', 'i43gd', 'Bob', 'Jones', '9254565522', 11),
-('3', 'Employee_9', '123gadf', 'Jimmy', 'Jones', '9255291234', 12),
-('3', 'Employee_10', 'a4tdg', 'Jimmy', 'Brown', '5554443333', 13),
-('3', 'Employee_11', 'ghwrh', 'Steve', 'Johnson', '1234567890', 14);
+('1', 'Employee_1', 'password', 'Bob', 'Hardings', 4, '2695554444', 'bob@coffee.com'),
+('1', 'Employee_2', '1234', 'Chompy', 'Evans', 5, '2691112222', 'emp_2@coffee.com'),
+('2', 'Employee_3', 'asdgw34', 'Kevin', 'Carols', 6, '2691234567', 'carolscoffee@gmail.com'),
+('2', 'Employee_4', 'dsgaasd', 'Sasha', 'Smith', 7, '2691231234', 'sasha@smith.com'),
+('2', 'Employee_5', 'aaa', 'Sarah', 'Smithers', 8, '2695555555', '9688@12345.com'),
+('1', 'Employee_6', '87cmk489', 'Ellen', 'Pantaleo', 9, '5555555555', 'anemail@email.com'),
+('3', 'Employee_7', 'caeaf', 'Sally', 'Barnes', 10, '9259991210', 'anemail@send.com'),
+('3', 'Employee_8', 'i43gd', 'Bob', 'Jones', 11, '9254565522', 'employee@coffee.com'),
+('3', 'Employee_9', '123gadf', 'Jimmy', 'Jones', 12, '9255291234', 'jimmyjangles@coffee.com'),
+('3', 'Employee_10', 'a4tdg', 'Jimmy', 'Brown', 13, '5554443333', 'a@coffee.com'),
+('3', 'Employee_11', 'ghwrh', 'Steve', 'Johnson', 14, '1234567890', 'steven@steven.com');
 

@@ -118,8 +118,9 @@ CREATE TABLE `customer` (
   `password` varchar(50) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
-  `phone` varchar(10) NOT NULL,
   `addr_id` int(11) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
   PRIMARY KEY (`cust_id`),
   KEY `store_id` (`store_id`),
   KEY `addr_id` (`addr_id`),
@@ -134,7 +135,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,1,'Customer_1','kljsd','Timmy','Evans','1231112222',15),(2,1,'Customer_2','asdg','Jeanette','McGalliger','1232223333',16),(3,1,'Customer_3','etrhg','Jason','Smith','1233334444',17),(4,1,'Customer_4','dgare','Pedro','Smith','1234445555',18),(5,1,'Customer_5','wtjf','Francisco','Jane','1235556666',19),(6,2,'Customer_6','hjetjsdf','Carroll','Tethers','1236667777',20),(7,2,'Customer_7','rewyh','Bert','Jennings','1237778888',21),(8,2,'Customer_8','adhjtw','Jane','Loh','1239990000',22),(9,2,'Customer_9','jwrta','Jenny','Cardozo','2341112222',23),(10,2,'Customer_10','aaa','Shirley','Beeson','2342223333',24),(11,3,'Customer_11','aherh','Ricky','Caldwell','2343334444',25),(12,3,'Customer_12','1234','Norman','Mattiacci','2344445555',26),(13,3,'Customer_13','4236','Emilio','Vessot','2345556666',27),(14,3,'Customer_14','sfhsd','Ben','Hayman','2346667777',28),(15,3,'Customer_15','wrhsf','Iris','Samuel','2347778888',29),(16,2,'Customer_16','hjsrt','Evelyn','Savett','2348889999',30),(17,2,'Customer_17','rehe','Deborah','Ames','2349990000',31),(18,1,'Customer_18','herhe','Pam','Battson','3451112222',32),(19,1,'Customer_19','erewh','Annie','Decker','3452223333',33),(20,1,'Customer_20','wthsf','Aubry','Wheatly','3453334444',34),(21,1,'Customer_21','htrhjs','Kenny','Cantor','3454445555',35),(22,3,'Customer_22','erhwg','Alicia','Boggs','3455556666',36),(23,2,'Customer_23','wrhss','Jimmy','Lovison','3456667777',37),(24,2,'Customer_24','wrhsh','Jenny','Lovison','2456667778',37);
+INSERT INTO `customer` VALUES (1,1,'Customer_1','kljsd','Timmy','Evans',15,'1231112222','a@aaa.com'),(2,1,'Customer_2','asdg','Jeanette','McGalliger',16,'1232223333','aa@aaa.com'),(3,1,'Customer_3','etrhg','Jason','Smith',17,'1233334444','aaa@aaa.com'),(4,1,'Customer_4','dgare','Pedro','Smith',18,'1234445555','sdf@a.com'),(5,1,'Customer_5','wtjf','Francisco','Jane',19,'1235556666','lk@lask.com'),(6,2,'Customer_6','hjetjsdf','Carroll','Tethers',20,'1236667777','2398@skd.com'),(7,2,'Customer_7','rewyh','Bert','Jennings',21,'1237778888','abc@abc.com'),(8,2,'Customer_8','adhjtw','Jane','Loh',22,'1239990000','klsad@lkal.com'),(9,2,'Customer_9','jwrta','Jenny','Cardozo',23,'2341112222','9e0@092.com'),(10,2,'Customer_10','aaa','Shirley','Beeson',24,'2342223333','029@sakdh.com'),(11,3,'Customer_11','aherh','Ricky','Caldwell',25,'2343334444','09238@sklh.com'),(12,3,'Customer_12','1234','Norman','Mattiacci',26,'2344445555','lkjla@coiu.com'),(13,3,'Customer_13','4236','Emilio','Vessot',27,'2345556666','23o0jf@gmail.com'),(14,3,'Customer_14','sfhsd','Ben','Hayman',28,'2346667777','gmail@gmail.com'),(15,3,'Customer_15','wrhsf','Iris','Samuel',29,'2347778888','cat@gmail.com'),(16,2,'Customer_16','hjsrt','Evelyn','Savett',30,'2348889999','aaa@gmail.com'),(17,2,'Customer_17','rehe','Deborah','Ames',31,'2349990000','alsogmail@gmail.com'),(18,1,'Customer_18','herhe','Pam','Battson',32,'3451112222','nope@nope.com'),(19,1,'Customer_19','erewh','Annie','Decker',33,'3452223333','nope@nope.nope'),(20,1,'Customer_20','wthsf','Aubry','Wheatly',34,'3453334444','abcde@gmail.com'),(21,1,'Customer_21','htrhjs','Kenny','Cantor',35,'3454445555','abc@gmail.com'),(22,3,'Customer_22','erhwg','Alicia','Boggs',36,'3455556666','qwerty@gmail.com'),(23,2,'Customer_23','wrhss','Jimmy','Lovison',37,'3456667777','12345@gmail.com'),(24,2,'Customer_24','wrhsh','Jenny','Lovison',37,'2456667778','qwerty@qwerty.com');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,8 +153,9 @@ CREATE TABLE `employee` (
   `password` varchar(50) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
-  `phone` varchar(10) NOT NULL,
   `addr_id` int(11) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
   PRIMARY KEY (`emp_id`),
   KEY `store_id` (`store_id`),
   KEY `addr_id` (`addr_id`),
@@ -168,7 +170,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,1,'Employee_1','password','Bob','Hardings','2695554444',4),(2,1,'Employee_2','1234','Chompy','Evans','2691112222',5),(3,2,'Employee_3','asdgw34','Kevin','Carols','2691234567',6),(4,2,'Employee_4','dsgaasd','Sasha','Smith','2691231234',7),(5,2,'Employee_5','aaa','Sarah','Smithers','2695555555',8),(6,1,'Employee_6','87cmk489','Ellen','Pantaleo','5555555555',9),(7,3,'Employee_7','caeaf','Sally','Barnes','9259991210',10),(8,3,'Employee_8','i43gd','Bob','Jones','9254565522',11),(9,3,'Employee_9','123gadf','Jimmy','Jones','9255291234',12),(10,3,'Employee_10','a4tdg','Jimmy','Brown','5554443333',13),(11,3,'Employee_11','ghwrh','Steve','Johnson','1234567890',14);
+INSERT INTO `employee` VALUES (1,1,'Employee_1','password','Bob','Hardings',4,'2695554444','bob@coffee.com'),(2,1,'Employee_2','1234','Chompy','Evans',5,'2691112222','emp_2@coffee.com'),(3,2,'Employee_3','asdgw34','Kevin','Carols',6,'2691234567','carolscoffee@gmail.com'),(4,2,'Employee_4','dsgaasd','Sasha','Smith',7,'2691231234','sasha@smith.com'),(5,2,'Employee_5','aaa','Sarah','Smithers',8,'2695555555','9688@12345.com'),(6,1,'Employee_6','87cmk489','Ellen','Pantaleo',9,'5555555555','anemail@email.com'),(7,3,'Employee_7','caeaf','Sally','Barnes',10,'9259991210','anemail@send.com'),(8,3,'Employee_8','i43gd','Bob','Jones',11,'9254565522','employee@coffee.com'),(9,3,'Employee_9','123gadf','Jimmy','Jones',12,'9255291234','jimmyjangles@coffee.com'),(10,3,'Employee_10','a4tdg','Jimmy','Brown',13,'5554443333','a@coffee.com'),(11,3,'Employee_11','ghwrh','Steve','Johnson',14,'1234567890','steven@steven.com');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -217,6 +219,8 @@ CREATE TABLE `store` (
   `store_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
   `addr_id` int(11) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
   PRIMARY KEY (`store_id`),
   KEY `addr_id` (`addr_id`),
   CONSTRAINT `store_ibfk_1` FOREIGN KEY (`addr_id`) REFERENCES `address` (`addr_id`) ON DELETE CASCADE
@@ -229,7 +233,7 @@ CREATE TABLE `store` (
 
 LOCK TABLES `store` WRITE;
 /*!40000 ALTER TABLE `store` DISABLE KEYS */;
-INSERT INTO `store` VALUES (1,'',1),(2,'',2),(3,'Cali CoffeeShop',3);
+INSERT INTO `store` VALUES (1,'',1,'1234567890','coffee_shop@coffee.com'),(2,'',2,'3216540987','coffee-shop@coffee.com'),(3,'Cali CoffeeShop',3,'9259998888','cali_shop@coffee.com');
 /*!40000 ALTER TABLE `store` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -269,4 +273,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-22  0:47:24
+-- Dump completed on 2016-11-23  3:34:22

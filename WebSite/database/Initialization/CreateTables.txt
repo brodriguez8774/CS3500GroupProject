@@ -73,6 +73,8 @@ CREATE TABLE store (
     store_id        INT PRIMARY KEY AUTO_INCREMENT,
     name            VARCHAR(100),
     addr_id         INT NOT NULL,
+    phone           VARCHAR(10) NOT NULL,
+    email           VARCHAR(50) NOT NULL,
     FOREIGN KEY     (addr_id)
         REFERENCES  address(addr_id)
         ON DELETE CASCADE
@@ -86,8 +88,9 @@ CREATE TABLE employee (
     password        VARCHAR(50) NOT NULL,
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
-    phone           VARCHAR(10) NOT NULL,
     addr_id         INT NOT NULL,
+    phone           VARCHAR(10) NOT NULL,
+    email           VARCHAR(50) NOT NULL,
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
         ON DELETE CASCADE,
@@ -104,8 +107,9 @@ CREATE TABLE customer (
     password        VARCHAR(50) NOT NULL,
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
-    phone           VARCHAR(10) NOT NULL,
     addr_id         INT NOT NULL,
+    phone           VARCHAR(10) NOT NULL,
+    email           VARCHAR(50) NOT NULL,
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
         ON DELETE CASCADE,
