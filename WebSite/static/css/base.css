@@ -70,11 +70,17 @@ header .placeholder {
 header .login {
   width: 10%; }
 
-header {
-  color: #fcce7e; }
+header a {
+  color: #fcce7e;
+  text-decoration: none; }
+header a:hover {
+  color: #fff; }
 
 header {
   background-color: #21140a; }
+
+header a {
+  transition: all 0.5s ease; }
 
 footer {
   display: flex;

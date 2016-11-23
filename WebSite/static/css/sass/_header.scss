@@ -69,7 +69,14 @@ header {
 //**************************************************
 
 header {
-    color: $color-title1;
+    a {
+        color: $color-title1;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-white;
+    }
 }
 
 //**************************************************
@@ -133,7 +140,12 @@ header {
 //START ***** Block
 //**************************************************
 
+header {
 
+    a {
+        transition: all 0.5s ease;
+    }
+}
 
 //**************************************************
 //END ***** Block
