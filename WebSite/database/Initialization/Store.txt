@@ -2,9 +2,9 @@
 /* Population values for Store Table of CoffeeShop Database */
 
 
-INSERT INTO store(name, addr_id, phone, email)
+INSERT INTO store(name, addr_id, phone, email, hours)
 VALUES
-('', 1, '1234567890', 'coffee_shop@coffee.com'),
-('', 2, '3216540987', 'coffee-shop@coffee.com'),
-('Cali CoffeeShop', 3, '9259998888', 'cali_shop@coffee.com');
+('', 1, '1234567890', 'coffee_shop@coffee.com', '6AM - 7PM'),
+('', 2, '3216540987', 'coffee-shop@coffee.com', '6AM - 7PM'),
+('Cali CoffeeShop', 3, '9259998888', 'cali_shop@coffee.com', '6AM - 7PM');
 

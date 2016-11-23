@@ -75,6 +75,7 @@ CREATE TABLE store (
     addr_id         INT NOT NULL,
     phone           VARCHAR(10) NOT NULL,
     email           VARCHAR(50) NOT NULL,
+    hours           VARCHAR(100) NOT NULL,
     FOREIGN KEY     (addr_id)
         REFERENCES  address(addr_id)
         ON DELETE CASCADE

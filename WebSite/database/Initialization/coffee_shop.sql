@@ -221,6 +221,7 @@ CREATE TABLE `store` (
   `addr_id` int(11) NOT NULL,
   `phone` varchar(10) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `hours` varchar(100) NOT NULL,
   PRIMARY KEY (`store_id`),
   KEY `addr_id` (`addr_id`),
   CONSTRAINT `store_ibfk_1` FOREIGN KEY (`addr_id`) REFERENCES `address` (`addr_id`) ON DELETE CASCADE
@@ -233,7 +234,7 @@ CREATE TABLE `store` (
 
 LOCK TABLES `store` WRITE;
 /*!40000 ALTER TABLE `store` DISABLE KEYS */;
-INSERT INTO `store` VALUES (1,'',1,'1234567890','coffee_shop@coffee.com'),(2,'',2,'3216540987','coffee-shop@coffee.com'),(3,'Cali CoffeeShop',3,'9259998888','cali_shop@coffee.com');
+INSERT INTO `store` VALUES (1,'',1,'1234567890','coffee_shop@coffee.com','6AM - 7PM'),(2,'',2,'3216540987','coffee-shop@coffee.com','6AM - 7PM'),(3,'Cali CoffeeShop',3,'9259998888','cali_shop@coffee.com','6AM - 7PM');
 /*!40000 ALTER TABLE `store` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -273,4 +274,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-23  3:34:22
+-- Dump completed on 2016-11-23  3:44:54
