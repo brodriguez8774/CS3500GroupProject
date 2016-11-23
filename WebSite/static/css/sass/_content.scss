@@ -59,9 +59,15 @@ main {
 //**************************************************
 
 main {
+
     p {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -207,6 +213,12 @@ main {
 //**************************************************
 
 main {
+
+    h2 {
+        font-size: 300%;
+        text-align: center;
+    }
+
     p {
         text-align: justify;
     }
@@ -224,11 +236,6 @@ main {
 //START Menu Block
 //**************************************************
 
-.menu-title {
-    font-size: 300%;
-    text-align: center;
-}
-
 .menu {
 
     .menu-item-header {
@@ -244,11 +251,6 @@ main {
 //**************************************************
 //START Contact Block
 //**************************************************
-
-.contact-title {
-    font-size: 300%;
-    text-align: center;
-}
 
 .location {
 
@@ -354,11 +356,6 @@ main {
 //**************************************************
 //START Contact Block
 //**************************************************
-
-.contact-title {
-    font-size: 300%;
-    text-align: center;
-}
 
 .location {
     background-color: $contact-back;

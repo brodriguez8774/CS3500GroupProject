@@ -190,6 +190,9 @@ main #content {
 main p {
   padding-top: 15px;
   padding-bottom: 15px; }
+main img {
+  width: 100%;
+  height: auto; }
 
 .menu {
   display: flex;
@@ -253,22 +256,17 @@ main p {
 .location p {
   padding: 0; }
 
+main h2 {
+  font-size: 300%;
+  text-align: center; }
 main p {
   text-align: justify; }
 main a {
   color: #211c10; }
 
-.menu-title {
-  font-size: 300%;
-  text-align: center; }
-
 .menu .menu-item-header {
   font-weight: bold;
   color: #fcce7e; }
-
-.contact-title {
-  font-size: 300%;
-  text-align: center; }
 
 .location .location-header {
   color: #fcce7e; }
@@ -294,10 +292,6 @@ main #content {
 .menu .menu-item-body img {
   border: 2px solid #59341b;
   border-radius: 50%; }
-
-.contact-title {
-  font-size: 300%;
-  text-align: center; }
 
 .location {
   background-color: #21140a;

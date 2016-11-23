@@ -10,7 +10,7 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
-      <h3>About Us</h3>
+      <h2>About Us</h2>
       <div class="logo-img">
         <img src="static/images/CoffeeLogo2.png" alt="CoffeeLogo">
       </div>

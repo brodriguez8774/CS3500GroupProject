@@ -18,7 +18,7 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
-      <h2 class="contact-title">Locations</h2>
+      <h2>Locations</h2>
       <?php
         while ($storeRow = $storeList->fetch()) {
           echo "<div class='location'>";
