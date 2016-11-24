@@ -12,7 +12,7 @@
     <div id="content">
       <h2>About Us</h2>
       <div class="logo-img">
-        <img src="static/images/CoffeeLogo2.png" alt="CoffeeLogo">
+        <img src="static/images/CoffeeLogo.png" alt="CoffeeLogo">
       </div>
       <p>
         Coffee Shop brand coffee stores are the premier something or other. We love coffee, and something something convincing selling stuff here.
