@@ -40,7 +40,7 @@ footer {
 
 nav {
   width: 100%; }
-  @media (min-width: 550px) and (max-width: 896px) {
+  @media (min-width: 767px) and (max-width: 896px) {
     nav {
       width: 95%; } }
   @media (min-width: 896px) {
@@ -61,9 +61,11 @@ header {
   border-bottom: 2px solid #000; }
 
 nav {
-  border-bottom: 2px solid #000;
-  border-bottom-right-radius: 5em;
-  border-bottom-left-radius: 5em; }
+  border-bottom: 2px solid #000; }
+  @media (min-width: 550px) {
+    nav {
+      border-bottom-right-radius: 5em;
+      border-bottom-left-radius: 5em; } }
 
 header {
   display: flex;
@@ -183,20 +185,29 @@ main {
   justify-content: space-between; }
 
 main .placeholder {
+  display: none;
   width: 0; }
   @media (min-width: 550px) and (max-width: 896px) {
     main .placeholder {
+      display: block;
       width: 5%; } }
   @media (min-width: 896px) {
     main .placeholder {
+      display: block;
       width: 10%;
       min-width: 100px; } }
 main #content {
-  width: 80%;
+  width: 100%;
   padding-top: 20px;
   padding-right: 3%;
   padding-bottom: 20px;
   padding-left: 3%; }
+  @media (min-width: 550px) and (max-width: 767px) {
+    main #content {
+      width: 90%; } }
+  @media (min-width: 767px) {
+    main #content {
+      width: 80%; } }
 
 main p {
   padding-top: 15px;
@@ -291,6 +302,10 @@ main a {
 
 .location .location-header {
   color: #fcce7e; }
+.location div p:nth-child(odd) {
+  text-align: left; }
+.location div p:nth-child(even) {
+  text-align: right; }
 
 main #content {
   background-color: #e0ab4f;

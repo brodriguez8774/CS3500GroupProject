@@ -37,13 +37,16 @@ main {
 main {
 
     .placeholder {
+        display: none;
         width: 0;
 
         @media (min-width: $phone-mid) and (max-width: $tablet-mid) {
+            display: block;
             width: 5%;
         }
 
         @media (min-width: $tablet-mid) {
+            display: block;
             width: 10%;
     		min-width: 100px;
         }
@@ -51,11 +54,19 @@ main {
     }
 
     #content {
-        width: 80%;
+        width: 100%;
         padding-top: 20px;
         padding-right: 3%;
         padding-bottom: 20px;
         padding-left: 3%;
+
+        @media (min-width: $phone-mid) and (max-width: $phone-max) {
+            width: 90%;
+        }
+
+        @media (min-width: $phone-max) {
+            width: 80%;
+        }
     }
 }
 
@@ -275,6 +286,14 @@ main {
 
     .location-header {
         color: $contact-header;
+    }
+
+    div p:nth-child(odd) {
+        text-align: left;
+    }
+
+    div p:nth-child(even) {
+        text-align: right;
     }
 }
 

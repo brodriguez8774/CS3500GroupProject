@@ -50,7 +50,7 @@ nav {
 
     width: 100%;
 
-    @media (min-width: $phone-mid) and (max-width: $tablet-mid) {
+    @media (min-width: $phone-max) and (max-width: $tablet-mid) {
         width: 95%;
     }
 
@@ -136,8 +136,10 @@ footer {
 nav {
     border-bottom: 2px solid $color-borders;
 
-    border-bottom-right-radius: 5em;
-    border-bottom-left-radius: 5em;
+    @media (min-width: $phone-mid) {
+        border-bottom-right-radius: 5em;
+        border-bottom-left-radius: 5em;
+    }
 }
 
 //**************************************************
