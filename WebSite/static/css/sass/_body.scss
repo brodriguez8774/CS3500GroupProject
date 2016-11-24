@@ -47,7 +47,16 @@ footer {
 }
 
 nav {
-    width: 85%;
+
+    width: 100%;
+
+    @media (min-width: $phone-mid) and (max-width: $tablet-mid) {
+        width: 95%;
+    }
+
+    @media (min-width: $tablet-mid) {
+        width: 85%;
+    }
 }
 
 main {

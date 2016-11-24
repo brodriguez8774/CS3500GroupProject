@@ -39,7 +39,13 @@ footer {
   width: 100%; }
 
 nav {
-  width: 85%; }
+  width: 100%; }
+  @media (min-width: 550px) and (max-width: 896px) {
+    nav {
+      width: 95%; } }
+  @media (min-width: 896px) {
+    nav {
+      width: 85%; } }
 
 main {
   flex-grow: 1;
@@ -177,11 +183,16 @@ main {
   justify-content: space-between; }
 
 main .placeholder {
-  width: 10%;
-  min-width: 100px; }
+  width: 0; }
+  @media (min-width: 550px) and (max-width: 896px) {
+    main .placeholder {
+      width: 5%; } }
+  @media (min-width: 896px) {
+    main .placeholder {
+      width: 10%;
+      min-width: 100px; } }
 main #content {
   width: 80%;
-  min-width: 500px;
   padding-top: 20px;
   padding-right: 3%;
   padding-bottom: 20px;
@@ -202,8 +213,14 @@ main img {
 .menu .menu-item {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  max-width: 45%; }
+  width: 90%;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto; }
+  @media (min-width: 767px) {
+    .menu .menu-item {
+      max-width: 45%; } }
 .menu .menu-item-header {
   display: flex;
   justify-content: space-between;
@@ -224,8 +241,14 @@ main img {
 
 .logo-img {
   float: left;
-  max-width: 30%;
+  max-width: 50%;
   height: auto; }
+  @media (min-width: 550px) and (max-width: 767px) {
+    .logo-img {
+      max-width: 40%; } }
+  @media (min-width: 767px) {
+    .logo-img {
+      max-width: 30%; } }
 
 .location {
   width: 100%;
@@ -256,8 +279,9 @@ main img {
 main h2 {
   font-size: 300%;
   text-align: center; }
-main p {
-  text-align: justify; }
+@media (min-width: 896px) {
+  main p {
+    text-align: justify; } }
 main a {
   color: #211c10; }
 

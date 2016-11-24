@@ -35,14 +35,23 @@ main {
 }
 
 main {
+
     .placeholder {
-        width: 10%;
-		min-width: 100px;
+        width: 0;
+
+        @media (min-width: $phone-mid) and (max-width: $tablet-mid) {
+            width: 5%;
+        }
+
+        @media (min-width: $tablet-mid) {
+            width: 10%;
+    		min-width: 100px;
+        }
+
     }
 
     #content {
         width: 80%;
-		min-width: 500px;
         padding-top: 20px;
         padding-right: 3%;
         padding-bottom: 20px;
@@ -91,8 +100,15 @@ main {
         display: flex;
         flex-direction: column;
 
-        margin: 5px;
-        max-width: 45%;
+        width: 90%;
+        margin-top: 5px;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-left: auto;
+
+        @media (min-width: $phone-max) {
+            max-width: 45%;
+        }
     }
 
     .menu-item-header {
@@ -136,8 +152,16 @@ main {
 
 .logo-img {
     float: left;
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
+
+    @media (min-width: $phone-mid) and (max-width: $phone-max) {
+        max-width: 40%;
+    }
+
+    @media (min-width: $phone-max) {
+        max-width: 30%;
+    }
 }
 
 //**************************************************
@@ -212,7 +236,10 @@ main {
     }
 
     p {
-        text-align: justify;
+
+        @media (min-width: $tablet-mid) {
+            text-align: justify;
+        }
     }
 
     a {
