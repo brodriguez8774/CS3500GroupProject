@@ -52,10 +52,10 @@ main {
   width: 100%; }
 
 body {
-  color: #0d0b06; }
+  color: #2F2206; }
 
 body {
-  background-color: #bf8d36; }
+  background-color: #907544; }
 
 header {
   border-bottom: 2px solid #000; }
@@ -79,7 +79,7 @@ header .login {
   width: 10%; }
 
 header a {
-  color: #fcce7e;
+  color: #FCE1B0;
   text-decoration: none; }
 header a:hover {
   color: #fff; }
@@ -98,7 +98,7 @@ footer {
 
 footer {
   font-weight: bold;
-  color: #f2b955; }
+  color: #F8FAEA; }
 
 footer {
   background-color: #21140a;
@@ -146,19 +146,19 @@ nav .drop a {
   padding-left: 10px; }
 
 nav {
-  color: #f2b955; }
+  color: #F8FAEA; }
 
 nav li {
-  color: #f2b955;
+  color: #F8FAEA;
   font-weight: bold; }
 nav li:hover {
-  color: #fcce7e;
+  color: #FCE1B0;
   text-decoration: underline; }
 nav a {
-  color: #f2b955;
+  color: #F8FAEA;
   text-decoration: none; }
 nav a:hover {
-  color: #fcce7e;
+  color: #FCE1B0;
   text-decoration: underline; }
 nav li ul {
   display: flex;
@@ -298,22 +298,22 @@ main a {
 
 .menu .menu-item-header {
   font-weight: bold;
-  color: #fcce7e; }
+  color: #FCE1B0; }
 
 .location .location-header {
-  color: #fcce7e; }
+  color: #FCE1B0; }
 .location div p:nth-child(odd) {
   text-align: left; }
 .location div p:nth-child(even) {
   text-align: right; }
 
 main #content {
-  background-color: #e0ab4f;
+  background-color: #cdd0c5;
   border-right: 2px solid #000;
   border-left: 2px solid #000; }
 
 .menu-item {
-  background-color: #bf8d36;
+  background-color: #907544;
   border-bottom: 2px solid #59341b;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15%;
@@ -322,7 +322,7 @@ main #content {
 
 .menu .menu-item-header {
   background-color: #21140a;
-  border-bottom: 3px solid #fcce7e;
+  border-bottom: 3px solid #FCE1B0;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px; }
 .menu .menu-item-body img {
@@ -337,9 +337,9 @@ main #content {
   display: flex;
   justify-content: space-between; }
 .location div:nth-child(2n+2) {
-  background-color: #bf8d36; }
+  background-color: #907544; }
 .location div:nth-child(2n+3) {
-  background-color: #e0ab4f; }
+  background-color: #cdd0c5; }
 .location div:last-child {
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px; }
