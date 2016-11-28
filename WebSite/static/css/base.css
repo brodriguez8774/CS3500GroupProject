@@ -287,6 +287,22 @@ main img {
 .location p {
   padding: 0; }
 
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 350px;
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.login-form div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px; }
+.login-form label {
+  width: 80px; }
+
 main h2 {
   font-size: 300%;
   text-align: center; }
