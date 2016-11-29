@@ -11,4 +11,5 @@ SELECT * FROM employee;
 SELECT * FROM ingredient;
 SELECT * FROM store;
 SELECT * FROM tea;
+SELECT * FROM user;
 

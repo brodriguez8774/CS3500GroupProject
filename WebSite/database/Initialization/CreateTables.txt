@@ -6,12 +6,7 @@ CREATE DATABASE IF NOT EXISTS coffee_shop;
 USE coffee_shop;
 
 
-DROP TABLES IF EXISTS ingredient, coffee, tea, baked_good, employee, customer, store, address;
-/*
-DROP TRIGGER IF EXISTS unique_emp_login_insert_trigger, unique_emp_login_update_trigger;
-DROP TRIGGER IF EXISTS unique_cust_login_insert_trigger, unique_cust_login_update_trigger;
-DROP PROCEDURE IF EXISTS unique_emp_login_procedure, unique_cust_login_procedure;
-*/
+DROP TABLES IF EXISTS ingredient, coffee, tea, baked_good, employee, customer, user, store, address;
 
 
 CREATE TABLE baked_good (
@@ -82,11 +77,17 @@ CREATE TABLE store (
 );
 
 
+CREATE TABLE user (
+    user_id         INT PRIMARY KEY AUTO_INCREMENT,
+    login_id        VARCHAR(50) NOT NULL UNIQUE,
+    password        VARCHAR(50) NOT NULL
+);
+
+
 CREATE TABLE employee (
     emp_id          INT PRIMARY KEY AUTO_INCREMENT,
     store_id        INT NOT NULL,
-    emp_login_id    VARCHAR(50) NOT NULL,
-    password        VARCHAR(50) NOT NULL,
+    user_id         INT NOT NULL,
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
     addr_id         INT NOT NULL,
@@ -94,6 +95,9 @@ CREATE TABLE employee (
     email           VARCHAR(50) NOT NULL,
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY     (user_id)
+        REFERENCES  user(user_id)
         ON DELETE CASCADE,
     FOREIGN KEY     (addr_id)
         REFERENCES  address(addr_id)
@@ -104,8 +108,7 @@ CREATE TABLE employee (
 CREATE TABLE customer (
     cust_id         INT PRIMARY KEY AUTO_INCREMENT,
     store_id        INT NOT NULL,
-    cust_login_id   VARCHAR(50) NOT NULL,
-    password        VARCHAR(50) NOT NULL,
+    user_id         INT,
     first_name      VARCHAR(50) NOT NULL,
     last_name       VARCHAR(50) NOT NULL,
     addr_id         INT NOT NULL,
@@ -114,35 +117,11 @@ CREATE TABLE customer (
     FOREIGN KEY     (store_id)
         REFERENCES  store(store_id)
         ON DELETE CASCADE,
+    FOREIGN KEY     (user_id)
+        REFERENCES  user(user_id)
+        ON DELETE CASCADE,
     FOREIGN KEY     (addr_id)
         REFERENCES  address(addr_id)
         ON DELETE CASCADE
 );
-
-
-/*
-DELIMITER //
-
-CREATE PROCEDURE unique_emp_login_procedure
-    IF (emp_login_id = (SELECT cust_login_id FROM customer, employee WHERE cust_login_id = emp_login_id)) THEN
-        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ERROR: Duplicate login_id detected between tables!'
-    END IF
-END//
-
-
-CREATE PROCEDURE unique_cust_login_procedure
-    IF (cust_login_id = (SELECT emp_login_id FROM customer, employee WHERE cust_login_id = emp_login_id)) THEN
-        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ERROR: Duplicate login_id detected between tables!'
-    END IF
-END//
-
-
-CREATE TRIGGER unique_emp_login_insert_trigger BEFORE INSERT ON employee
-FOR EACH ROW BEGIN
-    CALL unique_emp_login_procedure
-END//
-
-
-DELIMITER ;
-*/
 

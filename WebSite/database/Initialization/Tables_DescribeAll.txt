@@ -9,4 +9,5 @@ DESCRIBE employee;
 DESCRIBE ingredient;
 DESCRIBE store;
 DESCRIBE tea;
+DESCRIBE user;
 
