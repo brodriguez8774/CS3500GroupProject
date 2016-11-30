@@ -3,7 +3,7 @@
   include_once "database/databaseAll.inc.php";
   include_once "templates/login.inc.php";
 
-  $error = filter_input(INPUT_GET, 'err', $filter = FILTER_SANATIZE_STRING);
+  $error = filter_input(INPUT_GET, 'error', $filter = FILTER_SANITIZE_STRING);
 ?>
 
 <body>

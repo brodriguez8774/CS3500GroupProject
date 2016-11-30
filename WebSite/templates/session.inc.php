@@ -15,7 +15,7 @@
 
     // Force session to only use cookies.
     if (ini_set('session.use_only_cookies', 1) === FALSE) {
-      header("Location: <?php echo $baseUrl ?>templates/error.php?err='Could not initiate a safe session (ini_set)'");
+      header("Location: ../error.php?error=Could not initiate a safe session (ini_set)");
       exit();
     }
 

@@ -15,7 +15,7 @@
       //header('Location: ../protected_page.php');
     } else {
       // Login failed.
-      header('Location: ../error.php?error="Login Failed"');
+      header('Location: ../error.php?error=Login Failed');
     }
   }
 
