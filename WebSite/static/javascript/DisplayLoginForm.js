@@ -11,9 +11,11 @@ var loginBackground = document.getElementsByName("login-background");
 //document.write(loginBackground[0]);
 
 // Display login form if login button is clicked.
-loginLink[0].addEventListener("click", function(){
-    loginFormWrapper[0].style.display = "flex";
-});
+if (loginLink[0] != null) {
+    loginLink[0].addEventListener("click", function(){
+        loginFormWrapper[0].style.display = "flex";
+    });
+}
 
 // Check if click occurs outside of login form. If so, hide once again.
 document.addEventListener("click", function(e) {
