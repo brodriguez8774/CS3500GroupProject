@@ -33,7 +33,7 @@
 </body>
 <?php
   include_once "../database/databaseClose.inc.php";
-  include_once "../templates/javascript.php";
+  include_once "../templates/javascript.inc.php";
 ?>
 <script type="text/javascript" src="../static/javascript/DisplayLoginForm.js"></script>
 </html>

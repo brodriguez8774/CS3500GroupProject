@@ -46,6 +46,6 @@
 </body>
 <?php
   include_once "database/databaseClose.inc.php";
-  include_once "templates/javascript.php";
+  include_once "templates/javascript.inc.php";
 ?>
 </html>
