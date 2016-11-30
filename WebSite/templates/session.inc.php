@@ -10,23 +10,23 @@
 
     $session_name = "secureSessionID";
     session_name($session_name);
-    $secure = true;
+    $secure = false;
     $httponly = true;
 
     // Force session to only use cookies.
     if (ini_set('session.use_only_cookies', 1) === FALSE) {
-      header('Location: <?php echo $baseUrl ?>templates/error.php?err="Could not initiate a safe session (ini_set"');
+      header("Location: <?php echo $baseUrl ?>templates/error.php?err='Could not initiate a safe session (ini_set)'");
       exit();
     }
 
     // Get current cookie values.
     $cookieParams = session_get_cookie_params();
     session_set_cookie_params(
-      $cookieParams["lifetime"],
-      $cookieParams["path"],
-      $cookieParams["domain"],
-      $secure,
-      $httponly
+        $cookieParams["lifetime"],
+        $cookieParams["path"],
+        $cookieParams["domain"],
+        $secure,
+        $httponly
     );
 
     // Regenerate session and delete old one.
@@ -36,17 +36,25 @@
 
 
   function login($pdo, $loginID, $loginPass) {
+    echo "<br>DEBUG Starting login function <br>";
     $sqlLogin = "SELECT user_id, login_id, password
                   FROM user
-                  WHERE login_id = " . $loginID . ";";
+                  WHERE login_id = '" . $loginID . "';";
+                  echo "<br>DEBUG " . $sqlLogin . "<br>";
 
     $loginList = $pdo->query($sqlLogin);
 
+    echo "<br>DEBUG Login sql: <br> $sqlLogin <br>";
+    echo "<br>DEBUG Checking for result <br>";
     // Check if result is returned.
     if ($loginRow = $loginList->fetch()) {
 
+      //echo ("<br>DEBUG Checking for password match <br> pass: " . $loginPass . "<br> check: " . $loginRow['password']);
+      //$aPass = hash('sha512', $loginRow['password']);
+      //echo ("<br>DEBUG Checking for password match <br> pass: " . $loginPass . "<br> check: " . $loginRow['password']);
       // Check if password matches.
-      if (password_verify($loginPass, $loginRow('password'))) {
+      //if (password_verify($loginPass, $loginRow['password'])) {
+      if ($loginPass == $loginRow['password']) {
           // Password correct.
           $user_browser = $_SERVER['HTTP_USER_AGENT'];
           $user_id = preg_replace("/[^0-9]+/", "", $loginRow['user_id']);
@@ -56,47 +64,68 @@
           $_SESSION['username'] = $username;
           $_SESSION['login_string'] = hash('sha512', $loginRow['password'] . $user_browser);
 
+          echo "<br>DEBUG Correct pass. Login Function returning true. <br>";
           return true;
       } else {
         // Password not correct.
+        echo "<br>DEBUG Incorrect Pass <br>";
         return false;
       }
     } else {
-      // No user found
+      // No user found.
+      echo "<br>DEBUG No user match found <br>";
       return false;
     }
-
   }
 
-  function login_check() {
+
+  function login_check($pdo) {
     // If anything fails, return false.
 
+    echo "<br><br><br>DEBUG Starting login_check function <br>";
+
+    echo ("<br>DEBUG user_id: " . $_SESSION['user_id'] .
+        "<br>username: " . $_SESSION['username'] .
+        "<br>login_string: " . $_SESSION['login_string'] . "<br>");
+
     // First check for all variable sessions being set.
-    if (isset($_SESSION)['user_id'], $_SESSION['username'], $_SESSION['login_string']) {
+    if (isset($_SESSION['user_id'], $_SESSION['username'], $_SESSION['login_string'])) {
       $user_id = $_SESSION['user_id'];
       $username = $_SESSION['username'];
       $login_string = $_SESSION['login_string'];
 
       // Get string of browser.
       $user_browser = $_SERVER['HTTP_USER_AGENT'];
+      echo "<br>DEBUG Browser: " . $user_browser;
 
       $sqlLogin = "SELECT user_id, login_id, password
                   FROM user
-                  WHERE login_id = " . $user_id . ";";
+                  WHERE user_id = " . $user_id . ";";
+
+                  echo "<br>DEBUG login_check sql: " . $sqlLogin . "<br>";
       $loginList = $pdo->query($sqlLogin);
 
       // Check if result is returned.
-      if ($loginRow = $loginList->fetch()) {
+      while ($loginRow = $loginList->fetch()) {
         $login_check = hash('sha512', $loginRow['password'] . $user_browser);
 
         // If match, then credentials are valid. User is logged in.
         if (hash_equals($login_check, $login_string)) {
+          echo "<br>DEBUG User has valid login. login_check function returning true. <br>";
           return true;
+        } else {
+          echo "<br>DEBUG Session data does not match expected. <br>";
+          return false;
         }
-      } else {
-        return false;
-      }
+      } //else {
+        //echo "<br>DEBUG No result returned from provided session data. Terminating previous session. <br>";
+        //return false;
+     // }
     } else {
+      echo ("<br>DEBUG Not all session vars present. <br>" .
+        "user_id: " . $_SESSION['user_id'] .
+        "username: " . $_SESSION['username'] .
+        "login_string: " . $_SESSION['login_string'] . "<br>");
       return false;
     }
 
@@ -133,6 +162,6 @@
     } else {
         return $url;
     }
-}
+  }
 
 ?>

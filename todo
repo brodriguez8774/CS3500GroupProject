@@ -5,6 +5,7 @@ Project TODO List -- TODO information, as well as general information for intend
 TODO:
 
     Database:
+        * User passwords are currently naively stored as plaintext. Need to be secured and hashed.
         
         Extra if time:
             * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
@@ -15,6 +16,7 @@ TODO:
         * Populate home page.
 	    * Create user login page (preferably via lightbox).
 	    * Create user info/settings pages, only accessible once logged in.
+        * Create user registration page.
 	
         Extra if time:
             * Create order online page.
