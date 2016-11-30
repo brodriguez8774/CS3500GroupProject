@@ -44,5 +44,8 @@
     include_once "templates/footer.php";
   ?>
 </body>
-<script type="text/javascript" src="/static/javascript/DisplayLoginForm.js"></script>
+<?php
+  include_once "database/databaseClose.inc.php";
+  include_once "templates/javascript.php";
+?>
 </html>

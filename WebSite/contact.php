@@ -56,6 +56,6 @@
 </body>
 <?php
   include_once "database/databaseClose.inc.php";
+  include_once "templates/javascript.php";
 ?>
-<script type="text/javascript" src="/static/javascript/DisplayLoginForm.js"></script>
 </html>
