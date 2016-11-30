@@ -295,6 +295,25 @@ main img {
 .location p {
   padding: 0; }
 
+.login-form-wrapper {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.login-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  min-height: 225px; }
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -367,5 +386,12 @@ main #content {
 .location div:last-child {
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px; }
+
+.login-form-wrapper {
+  background-color: rgba(85, 85, 85, 0.4); }
+
+.login-background {
+  background-color: #cdd0c5;
+  border: 2px solid #59341b; }
 
 /*# sourceMappingURL=base.css.map */

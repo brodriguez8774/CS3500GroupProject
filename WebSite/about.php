@@ -11,6 +11,9 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
+      <?php
+        include_once "templates/loginForm.inc.php";
+      ?>
       <h2>About Us</h2>
       <div class="logo-img">
         <img src="static/images/CoffeeLogo.png" alt="CoffeeLogo">
@@ -40,4 +43,5 @@
     include_once "templates/footer.php";
   ?>
 </body>
+<script type="text/javascript" src="/static/javascript/DisplayLoginForm.js"></script>
 </html>

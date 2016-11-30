@@ -22,4 +22,5 @@
     include_once "templates/footer.php";
   ?>
 </body>
+<script type="text/javascript" src="/static/javascript/DisplayLoginForm.js"></script>
 </html>

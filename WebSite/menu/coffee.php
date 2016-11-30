@@ -16,6 +16,9 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
+      <?php
+        include_once "templates/loginForm.inc.php";
+      ?>
       <h2>Coffee Menu</h2>
       <?php
         include_once "../templates/menuItem.inc.php";
@@ -30,4 +33,5 @@
 <?php
   include_once "../database/databaseClose.inc.php";
 ?>
+<script type="text/javascript" src="../static/javascript/DisplayLoginForm.js"></script>
 </html>

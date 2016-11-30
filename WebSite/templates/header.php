@@ -13,7 +13,7 @@
     <div class="placeholder"></div>
     <h1><a href="<?php echo $baseUrl; ?>index.php">Coffee Shop</a></h1>
     <div class="login">
-      <p class="login-link">Login</p>
+      <p class="login-link" name="login-link">Login</p>
     </div>
   <?php
     }

@@ -227,6 +227,29 @@ main {
 //START Login Form Block
 //**************************************************
 
+.login-form-wrapper {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.login-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 450px;
+    min-height: 225px;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -461,6 +484,23 @@ main {
 
 //**************************************************
 //END Contact Block
+//**************************************************
+
+//**************************************************
+//START Login Form Block
+//**************************************************
+
+.login-form-wrapper {
+    background-color: $color-transparentGrey;
+}
+
+.login-background {
+    background-color: $color-body;
+    border: 2px solid $menu-border;
+}
+
+//**************************************************
+//END Login Form Block
 //**************************************************
 
 //*************************************************************************************************

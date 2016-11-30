@@ -15,6 +15,9 @@
   <main>
     <div class="placeholder"></div>
     <div id="content">
+      <?php
+        include_once "templates/loginForm.inc.php";
+      ?>
       <h2>Locations</h2>
       <?php
         while ($storeRow = $storeList->fetch()) {
@@ -53,4 +56,5 @@
 <?php
   include_once "database/databaseClose.inc.php";
 ?>
+<script type="text/javascript" src="/static/javascript/DisplayLoginForm.js"></script>
 </html>
