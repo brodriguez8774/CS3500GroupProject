@@ -10,63 +10,56 @@ TODO:
         Extra if time:
             * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
             * Possibly modify customer and employee tables so that employees are an extension of customers, with extra fields?
-            * If not extending, create triggers to assert that cust_login and emp_logins are never identical
 
     Pages: 
         * Populate home page.
-	    * Create user login page (preferably via lightbox).
 	    * Create user info/settings pages, only accessible once logged in.
-        * Create user registration page.
+        * Create employee view to access individual customer data.
 	
         Extra if time:
-            * Create order online page.
-            * Possibly have extra pages for employees, including pages for viewing of individual customer data.
+            * Create order online page for logged in customers.
+            * Create user registration page.
 
     General:
-        * Mobile css.
-        * Implement security and sessions/cookies/serialization/etc.
+        * Figure out how to reference file structure based on root directory. Surely this has to be possible somehow.
+            * Organize include statements into a more hierarchial type order.
+              Generally try to minimize repeated includes present in every single page.
+        * Implement further security/sessions/cookies/etc.
+            * Implement more secure password handling once database passwords are hashed.
 
 
 Directroy structure:
 
-	Root
-		Resources:
-			- static
-				- css
-                    - sass
-				- images
-				- javascript
-            - xampp
-                - All files from default xampp project, as reference incase needed.
+	: Root
 
-		Pages:
-			- templates (include files)
-				- header.php
-				- footer.php
-				- nav.php
-				- menuItem.php
-            - menu
-				- coffee.php
-				- tea.php
-				- bakery.php
-			- user
-				- settings.php?
-				- customer.php
-				- employee.php
-				- login.php
-            - index.php
-			- about.php
-			- contact.php (phone number,email, P.o. box)
-			- order.php
+		: static
+			: css
+                - sass
+			- images
+			- javascript
 
-        Database:
-            - Initialization
-                - All necessary files to build and construct the database from scratch
-            - Any database connection handling and loading files.
+		: templates (include files)
+			* Any php files which don't stand on their own or belong within the database folder.
 
+        : menu
+			- coffee.php
+			- tea.php
+			- bakery.php
 
-Misc:
+		: user
+			- settings.php
+			- customer.php
+			- employee.php
 
-    * CSS Pre-Compiler:
-    	* SASS
+		- about.php
+		- contact.php
+        - error.php
+        - index.php
+		- order.php (WIP)
+        - test.php (for development only. Not accessable by direct links.)
+
+        : database
+            : Initialization
+                * All necessary files to build and construct the database from scratch
+            * Any database connection handling and loading files.
 
