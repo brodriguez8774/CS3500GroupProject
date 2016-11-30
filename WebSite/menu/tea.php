@@ -2,11 +2,7 @@
   include_once "../templates/head.php";
 
   // Database connection.
-  include_once "../database/databaseLogin.inc.php";
-  include_once "../database/databaseConnect.inc.php";
-  include_once "../database/databaseSelect.inc.php";
-  global $pdo;
-  $pdo = ConnectViaPDO($host, $DBuser, $DBpassword, $database, $DBport);
+  include_once "../database/databaseAll.inc.php";
   $foodList = $pdo->query($sqlSelectTea);
 
 ?>
