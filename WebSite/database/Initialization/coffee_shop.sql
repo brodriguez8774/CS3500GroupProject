@@ -127,7 +127,7 @@ CREATE TABLE `customer` (
   CONSTRAINT `customer_ibfk_1` FOREIGN KEY (`store_id`) REFERENCES `store` (`store_id`) ON DELETE CASCADE,
   CONSTRAINT `customer_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE,
   CONSTRAINT `customer_ibfk_3` FOREIGN KEY (`addr_id`) REFERENCES `address` (`addr_id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -136,7 +136,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,1,1,'Timmy','Evans',15,'1231112222','a@aaa.com'),(2,1,2,'Jeanette','McGalliger',16,'1232223333','aa@aaa.com'),(3,1,3,'Jason','Smith',17,'1233334444','aaa@aaa.com'),(4,1,4,'Pedro','Smith',18,'1234445555','sdf@a.com'),(5,1,5,'Francisco','Jane',19,'1235556666','lk@lask.com'),(6,2,6,'Carroll','Tethers',20,'1236667777','2398@skd.com'),(7,2,7,'Bert','Jennings',21,'1237778888','abc@abc.com'),(8,2,8,'Jane','Loh',22,'1239990000','klsad@lkal.com'),(9,2,9,'Jenny','Cardozo',23,'2341112222','9e0@092.com'),(10,2,10,'Shirley','Beeson',24,'2342223333','029@sakdh.com'),(11,3,11,'Ricky','Caldwell',25,'2343334444','09238@sklh.com'),(12,3,12,'Norman','Mattiacci',26,'2344445555','lkjla@coiu.com'),(13,3,13,'Emilio','Vessot',27,'2345556666','23o0jf@gmail.com'),(14,3,14,'Ben','Hayman',28,'2346667777','gmail@gmail.com'),(15,3,15,'Iris','Samuel',29,'2347778888','cat@gmail.com'),(16,2,16,'Evelyn','Savett',30,'2348889999','aaa@gmail.com'),(17,2,17,'Deborah','Ames',31,'2349990000','alsogmail@gmail.com'),(18,1,18,'Pam','Battson',32,'3451112222','nope@nope.com'),(19,1,19,'Annie','Decker',33,'3452223333','nope@nope.nope'),(20,1,20,'Aubry','Wheatly',34,'3453334444','abcde@gmail.com'),(21,1,21,'Kenny','Cantor',35,'3454445555','abc@gmail.com'),(22,3,22,'Alicia','Boggs',36,'3455556666','qwerty@gmail.com'),(23,2,23,'Jimmy','Lovison',37,'3456667777','12345@gmail.com'),(24,2,24,'Jenny','Lovison',37,'2456667778','qwerty@qwerty.com');
+INSERT INTO `customer` VALUES (1,1,1,'Test','Customer',9,'1234567890','test@customer.com'),(2,1,2,'Timmy','Evans',15,'1231112222','a@aaa.com'),(3,1,3,'Jeanette','McGalliger',16,'1232223333','aa@aaa.com'),(4,1,4,'Jason','Smith',17,'1233334444','aaa@aaa.com'),(5,1,5,'Pedro','Smith',18,'1234445555','sdf@a.com'),(6,1,6,'Francisco','Jane',19,'1235556666','lk@lask.com'),(7,2,7,'Carroll','Tethers',20,'1236667777','2398@skd.com'),(8,2,8,'Bert','Jennings',21,'1237778888','abc@abc.com'),(9,2,9,'Jane','Loh',22,'1239990000','klsad@lkal.com'),(10,2,10,'Jenny','Cardozo',23,'2341112222','9e0@092.com'),(11,2,11,'Shirley','Beeson',24,'2342223333','029@sakdh.com'),(12,3,12,'Ricky','Caldwell',25,'2343334444','09238@sklh.com'),(13,3,13,'Norman','Mattiacci',26,'2344445555','lkjla@coiu.com'),(14,3,14,'Emilio','Vessot',27,'2345556666','23o0jf@gmail.com'),(15,3,15,'Ben','Hayman',28,'2346667777','gmail@gmail.com'),(16,3,16,'Iris','Samuel',29,'2347778888','cat@gmail.com'),(17,2,17,'Evelyn','Savett',30,'2348889999','aaa@gmail.com'),(18,2,18,'Deborah','Ames',31,'2349990000','alsogmail@gmail.com'),(19,1,19,'Pam','Battson',32,'3451112222','nope@nope.com'),(20,1,20,'Annie','Decker',33,'3452223333','nope@nope.nope'),(21,1,21,'Aubry','Wheatly',34,'3453334444','abcde@gmail.com'),(22,1,22,'Kenny','Cantor',35,'3454445555','abc@gmail.com'),(23,3,23,'Alicia','Boggs',36,'3455556666','qwerty@gmail.com'),(24,2,24,'Jimmy','Lovison',37,'3456667777','12345@gmail.com'),(25,2,25,'Jenny','Lovison',37,'2456667778','qwerty@qwerty.com');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -163,7 +163,7 @@ CREATE TABLE `employee` (
   CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`store_id`) REFERENCES `store` (`store_id`) ON DELETE CASCADE,
   CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE,
   CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`addr_id`) REFERENCES `address` (`addr_id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,7 +172,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,1,25,'Bob','Hardings',4,'2695554444','bob@coffee.com'),(2,1,26,'Chompy','Evans',5,'2691112222','emp_2@coffee.com'),(3,2,27,'Kevin','Carols',6,'2691234567','carolscoffee@gmail.com'),(4,2,28,'Sasha','Smith',7,'2691231234','sasha@smith.com'),(5,2,29,'Sarah','Smithers',8,'2695555555','9688@12345.com'),(6,1,30,'Ellen','Pantaleo',9,'5555555555','anemail@email.com'),(7,3,31,'Sally','Barnes',10,'9259991210','anemail@send.com'),(8,3,32,'Bob','Jones',11,'9254565522','employee@coffee.com'),(9,3,33,'Jimmy','Jones',12,'9255291234','jimmyjangles@coffee.com'),(10,3,34,'Jimmy','Brown',13,'5554443333','a@coffee.com'),(11,3,35,'Steve','Johnson',14,'1234567890','steven@steven.com');
+INSERT INTO `employee` VALUES (1,1,26,'Test','Employee',9,'1234567890','test@employee.com'),(2,1,27,'Bob','Hardings',4,'2695554444','bob@coffee.com'),(3,1,28,'Chompy','Evans',5,'2691112222','emp_2@coffee.com'),(4,2,29,'Kevin','Carols',6,'2691234567','carolscoffee@gmail.com'),(5,2,30,'Sasha','Smith',7,'2691231234','sasha@smith.com'),(6,2,31,'Sarah','Smithers',8,'2695555555','9688@12345.com'),(7,1,32,'Ellen','Pantaleo',9,'5555555555','anemail@email.com'),(8,3,33,'Sally','Barnes',10,'9259991210','anemail@send.com'),(9,3,34,'Bob','Jones',11,'9254565522','employee@coffee.com'),(10,3,35,'Jimmy','Jones',12,'9255291234','jimmyjangles@coffee.com'),(11,3,36,'Jimmy','Brown',13,'5554443333','a@coffee.com'),(12,3,37,'Steve','Johnson',14,'1234567890','steven@steven.com');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -280,7 +280,7 @@ CREATE TABLE `user` (
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `login_id` (`login_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,7 +289,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Customer_1','kljsd'),(2,'Customer_2','asdg'),(3,'Customer_3','etrhg'),(4,'Customer_4','dgare'),(5,'Customer_5','wtjf'),(6,'Customer_6','hjetjsdf'),(7,'Customer_7','rewyh'),(8,'Customer_8','adhjtw'),(9,'Customer_9','jwrta'),(10,'Customer_10','aaa'),(11,'Customer_11','aherh'),(12,'Customer_12','1234'),(13,'Customer_13','4236'),(14,'Customer_14','sfhsd'),(15,'Customer_15','wrhsf'),(16,'Customer_16','hjsrt'),(17,'Customer_17','rehe'),(18,'Customer_18','herhe'),(19,'Customer_19','erewh'),(20,'Customer_20','wthsf'),(21,'Customer_21','htrhjs'),(22,'Customer_22','erhwg'),(23,'Customer_23','wrhss'),(24,'Customer_24','wrhsh'),(25,'Employee_1','password'),(26,'Employee_2','1234'),(27,'Employee_3','asdgw34'),(28,'Employee_4','dsgaasd'),(29,'Employee_5','aaa'),(30,'Employee_6','87cmk489'),(31,'Employee_7','caeaf'),(32,'Employee_8','i43gd'),(33,'Employee_9','123gadf'),(34,'Employee_10','a4tdg'),(35,'Employee_11','ghwrh');
+INSERT INTO `user` VALUES (1,'TestCust','test'),(2,'Customer_1','kljsd'),(3,'Customer_2','asdg'),(4,'Customer_3','etrhg'),(5,'Customer_4','dgare'),(6,'Customer_5','wtjf'),(7,'Customer_6','hjetjsdf'),(8,'Customer_7','rewyh'),(9,'Customer_8','adhjtw'),(10,'Customer_9','jwrta'),(11,'Customer_10','aaa'),(12,'Customer_11','aherh'),(13,'Customer_12','1234'),(14,'Customer_13','4236'),(15,'Customer_14','sfhsd'),(16,'Customer_15','wrhsf'),(17,'Customer_16','hjsrt'),(18,'Customer_17','rehe'),(19,'Customer_18','herhe'),(20,'Customer_19','erewh'),(21,'Customer_20','wthsf'),(22,'Customer_21','htrhjs'),(23,'Customer_22','erhwg'),(24,'Customer_23','wrhss'),(25,'Customer_24','wrhsh'),(26,'TestEmp','test'),(27,'Employee_1','password'),(28,'Employee_2','1234'),(29,'Employee_3','asdgw34'),(30,'Employee_4','dsgaasd'),(31,'Employee_5','aaa'),(32,'Employee_6','87cmk489'),(33,'Employee_7','caeaf'),(34,'Employee_8','i43gd'),(35,'Employee_9','123gadf'),(36,'Employee_10','a4tdg'),(37,'Employee_11','ghwrh');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -302,4 +302,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-29  0:14:01
+-- Dump completed on 2016-11-29 23:30:38

@@ -4,6 +4,7 @@
 
 INSERT INTO user(login_id, password)
 VALUES
+('TestEmp', 'test'),
 ('Employee_1', 'password'),
 ('Employee_2', '1234'),
 ('Employee_3', 'asdgw34'),
@@ -19,15 +20,16 @@ VALUES
 
 INSERT INTO employee(store_id, user_id, first_name, last_name, addr_id, phone, email)
 VALUES
-('1', 25, 'Bob', 'Hardings', 4, '2695554444', 'bob@coffee.com'),
-('1', 26, 'Chompy', 'Evans', 5, '2691112222', 'emp_2@coffee.com'),
-('2', 27, 'Kevin', 'Carols', 6, '2691234567', 'carolscoffee@gmail.com'),
-('2', 28, 'Sasha', 'Smith', 7, '2691231234', 'sasha@smith.com'),
-('2', 29, 'Sarah', 'Smithers', 8, '2695555555', '9688@12345.com'),
-('1', 30, 'Ellen', 'Pantaleo', 9, '5555555555', 'anemail@email.com'),
-('3', 31, 'Sally', 'Barnes', 10, '9259991210', 'anemail@send.com'),
-('3', 32, 'Bob', 'Jones', 11, '9254565522', 'employee@coffee.com'),
-('3', 33, 'Jimmy', 'Jones', 12, '9255291234', 'jimmyjangles@coffee.com'),
-('3', 34, 'Jimmy', 'Brown', 13, '5554443333', 'a@coffee.com'),
-('3', 35, 'Steve', 'Johnson', 14, '1234567890', 'steven@steven.com');
+('1', 26, 'Test', 'Employee', 9, '1234567890', 'test@employee.com'),
+('1', 27, 'Bob', 'Hardings', 4, '2695554444', 'bob@coffee.com'),
+('1', 28, 'Chompy', 'Evans', 5, '2691112222', 'emp_2@coffee.com'),
+('2', 29, 'Kevin', 'Carols', 6, '2691234567', 'carolscoffee@gmail.com'),
+('2', 30, 'Sasha', 'Smith', 7, '2691231234', 'sasha@smith.com'),
+('2', 31, 'Sarah', 'Smithers', 8, '2695555555', '9688@12345.com'),
+('1', 32, 'Ellen', 'Pantaleo', 9, '5555555555', 'anemail@email.com'),
+('3', 33, 'Sally', 'Barnes', 10, '9259991210', 'anemail@send.com'),
+('3', 34, 'Bob', 'Jones', 11, '9254565522', 'employee@coffee.com'),
+('3', 35, 'Jimmy', 'Jones', 12, '9255291234', 'jimmyjangles@coffee.com'),
+('3', 36, 'Jimmy', 'Brown', 13, '5554443333', 'a@coffee.com'),
+('3', 37, 'Steve', 'Johnson', 14, '1234567890', 'steven@steven.com');
 
