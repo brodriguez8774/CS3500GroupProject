@@ -10,7 +10,7 @@
       </div>
       <div>
         <label for="login-pass">Password: </label>
-        <input type="text" id="login-pass" name="login_pass">
+        <input type="password" id="login-pass" name="login_pass">
       </div>
       <input type="submit" type="submit">
     </form>
