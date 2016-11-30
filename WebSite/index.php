@@ -1,5 +1,6 @@
 <?php
   include_once "templates/head.php";
+  include_once "templates/login.inc.php";
 ?>
 
 <body>

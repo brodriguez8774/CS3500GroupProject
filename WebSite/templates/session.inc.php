@@ -82,12 +82,6 @@
   function login_check($pdo) {
     // If anything fails, return false.
 
-    echo "<br><br><br>DEBUG Starting login_check function <br>";
-
-    echo ("<br>DEBUG user_id: " . $_SESSION['user_id'] .
-        "<br>username: " . $_SESSION['username'] .
-        "<br>login_string: " . $_SESSION['login_string'] . "<br>");
-
     // First check for all variable sessions being set.
     if (isset($_SESSION['user_id'], $_SESSION['username'], $_SESSION['login_string'])) {
       $user_id = $_SESSION['user_id'];
@@ -96,13 +90,11 @@
 
       // Get string of browser.
       $user_browser = $_SERVER['HTTP_USER_AGENT'];
-      echo "<br>DEBUG Browser: " . $user_browser;
 
       $sqlLogin = "SELECT user_id, login_id, password
                   FROM user
                   WHERE user_id = " . $user_id . ";";
 
-                  echo "<br>DEBUG login_check sql: " . $sqlLogin . "<br>";
       $loginList = $pdo->query($sqlLogin);
 
       // Check if result is returned.
@@ -111,10 +103,8 @@
 
         // If match, then credentials are valid. User is logged in.
         if (hash_equals($login_check, $login_string)) {
-          echo "<br>DEBUG User has valid login. login_check function returning true. <br>";
           return true;
         } else {
-          echo "<br>DEBUG Session data does not match expected. <br>";
           return false;
         }
       } //else {
@@ -122,10 +112,6 @@
         //return false;
      // }
     } else {
-      echo ("<br>DEBUG Not all session vars present. <br>" .
-        "user_id: " . $_SESSION['user_id'] .
-        "username: " . $_SESSION['username'] .
-        "login_string: " . $_SESSION['login_string'] . "<br>");
       return false;
     }
 

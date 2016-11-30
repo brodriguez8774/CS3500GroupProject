@@ -1,4 +1,3 @@
-<h2>Please Login</h2>
 
 <?php
   // Initiate session/login handling.
@@ -31,11 +30,11 @@
 
 
   if (login_check($pdo) == true) {
-    $loggedIn = 'in';
-    echo "<br>DEBUG loggedIn: " . $loggedIn;
+    $loggedIn = TRUE;
+    echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
   } else {
-    $loggedIn = 'out';
-    echo "<br>DEBUG loggedIn: " . $loggedIn;
+    $loggedIn = FALSE;
+    echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
   }
 
 
@@ -82,15 +81,3 @@
     }
   }
 ?>
-
-<form class="login-form" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method="post">
-  <div>
-    <label for="login-ID">UserID: </label>
-    <input type="text" id="login-ID" name="login_ID">
-  </div>
-  <div>
-    <label for="login-pass">Password: </label>
-    <input type="text" id="login-pass" name="login_pass">
-  </div>
-  <input type="submit" type="submit">
-</form>

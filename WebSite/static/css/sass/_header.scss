@@ -77,6 +77,14 @@ header {
     a:hover {
         color: $color-white;
     }
+
+    p {
+        color: $color-title1;
+    }
+
+    p:hover {
+        color: $color-white;
+    }
 }
 
 //**************************************************
@@ -113,6 +121,10 @@ header {
 
 header {
     background-color: $color-header;
+
+    p {
+        cursor: pointer;
+    }
 }
 
 //**************************************************
@@ -143,6 +155,10 @@ header {
 header {
 
     a {
+        transition: all 0.5s ease;
+    }
+
+    p {
         transition: all 0.5s ease;
     }
 }

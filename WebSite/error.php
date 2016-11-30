@@ -1,5 +1,6 @@
 <?php
   include_once "templates/head.php";
+  include_once "templates/login.inc.php";
 
   $error = filter_input(INPUT_GET, 'err', $filter = FILTER_SANATIZE_STRING);
 ?>

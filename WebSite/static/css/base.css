@@ -83,11 +83,19 @@ header a {
   text-decoration: none; }
 header a:hover {
   color: #fff; }
+header p {
+  color: #FCE1B0; }
+header p:hover {
+  color: #fff; }
 
 header {
   background-color: #21140a; }
+  header p {
+    cursor: pointer; }
 
 header a {
+  transition: all 0.5s ease; }
+header p {
   transition: all 0.5s ease; }
 
 footer {
