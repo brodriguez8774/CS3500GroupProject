@@ -1,10 +1,10 @@
 <?php
-  include "templates/head.php";
+  include_once "templates/head.php";
 
   // Database connection.
-  include "database/databaseLogin.inc.php";
-  include "database/databaseConnect.inc.php";
-  include "database/databaseSelect.inc.php";
+  include_once "database/databaseLogin.inc.php";
+  include_once "database/databaseConnect.inc.php";
+  include_once "database/databaseSelect.inc.php";
   global $pdo;
   $pdo = ConnectViaPDO($host, $DBuser, $DBpassword, $database, $DBport);
   $storeList = $pdo->query($sqlSelectStore);
@@ -12,8 +12,8 @@
 
 <body>
   <?php
-    include "templates/header.php";
-    include "templates/nav.php";
+    include_once "templates/header.php";
+    include_once "templates/nav.php";
   ?>
   <main>
     <div class="placeholder"></div>
@@ -50,10 +50,10 @@
     <div class="placeholder"></div>
   </main>
   <?php
-    include "templates/footer.php";
+    include_once "templates/footer.php";
   ?>
 </body>
 <?php
-  include "database/databaseClose.inc.php";
+  include_once "database/databaseClose.inc.php";
 ?>
 </html>
