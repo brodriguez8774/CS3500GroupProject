@@ -1,5 +1,6 @@
 <?php
   include_once "../templates/head.php";
+  include_once "../database/databaseAll.inc.php";
   include_once "../templates/login.inc.php";
 
   // Database connection.
@@ -17,7 +18,7 @@
     <div class="placeholder"></div>
     <div id="content">
       <?php
-        include_once "templates/loginForm.inc.php";
+        include_once "../templates/loginForm.inc.php";
       ?>
       <h2>Baked Goods Menu</h2>
       <?php

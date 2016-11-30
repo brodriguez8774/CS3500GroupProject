@@ -1,7 +1,6 @@
 
 <?php
   // Initiate session/login handling.
-  include_once "database/databaseAll.inc.php";
   include_once "session.inc.php";
 
   secure_session_start();
