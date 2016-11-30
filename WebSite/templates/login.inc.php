@@ -7,33 +7,25 @@
 
   if (isset($_POST['login_ID'], $_POST['login_pass'])) {
 
-    echo "<br>DEBUG POST- login_id: " . $_POST['login_ID'] . "<br>";
-    echo "<br>DEBUG POST- login_pass: " . $_POST['login_pass'] . "<br>";
-
     $loginID = $_POST['login_ID'];
     $loginPass = $_POST['login_pass'];
-
-    echo "<br>DEBUG login_id: " . $loginID . "<br>";
-    echo "<br>DEBUG login_pass: " . $loginPass . "<br>";
 
     if (login($pdo, $loginID, $loginPass)) {
       // Login success.
       //header('Location: ../protected_page.php');
-      echo "<br>DEBUG Login view success.";
     } else {
       // Login failed.
-      //header('Location: ../index.php?error=1');
-      echo "<br>DEBUG Login failed.";
+      header('Location: ../error.php?error="Login Failed"');
     }
   }
 
 
   if (login_check($pdo) == true) {
     $loggedIn = TRUE;
-    echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
+    //echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
   } else {
     $loggedIn = FALSE;
-    echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
+    //echo "<br>DEBUG loggedIn: " . (int)$loggedIn;
   }
 
 
@@ -72,7 +64,7 @@
     }
 
     if ($valid) {
-      echo "<br>DEBUG <br> Valid username and password! Logging in! <br> <br>";
+
     }
 
     if (isset($_GET['error'])) {

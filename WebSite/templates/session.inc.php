@@ -36,16 +36,12 @@
 
 
   function login($pdo, $loginID, $loginPass) {
-    echo "<br>DEBUG Starting login function <br>";
     $sqlLogin = "SELECT user_id, login_id, password
                   FROM user
                   WHERE login_id = '" . $loginID . "';";
-                  echo "<br>DEBUG " . $sqlLogin . "<br>";
 
     $loginList = $pdo->query($sqlLogin);
 
-    echo "<br>DEBUG Login sql: <br> $sqlLogin <br>";
-    echo "<br>DEBUG Checking for result <br>";
     // Check if result is returned.
     if ($loginRow = $loginList->fetch()) {
 
@@ -64,16 +60,13 @@
           $_SESSION['username'] = $username;
           $_SESSION['login_string'] = hash('sha512', $loginRow['password'] . $user_browser);
 
-          echo "<br>DEBUG Correct pass. Login Function returning true. <br>";
           return true;
       } else {
         // Password not correct.
-        echo "<br>DEBUG Incorrect Pass <br>";
         return false;
       }
     } else {
       // No user found.
-      echo "<br>DEBUG No user match found <br>";
       return false;
     }
   }
@@ -107,10 +100,7 @@
         } else {
           return false;
         }
-      } //else {
-        //echo "<br>DEBUG No result returned from provided session data. Terminating previous session. <br>";
-        //return false;
-     // }
+      }
     } else {
       return false;
     }
