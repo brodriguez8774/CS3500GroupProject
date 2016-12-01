@@ -10,7 +10,7 @@ var formLoginUser = document.getElementsByName("login_ID");
 //document.write(loginLink[0]);
 //document.write(loginFormWrapper[0]);
 //document.write(loginBackground[0]);
-document.write(formLoginUser[0]);
+//document.write(formLoginUser[0]);
 
 // Display login form if login button is clicked.
 if (loginLink[0] != null) {

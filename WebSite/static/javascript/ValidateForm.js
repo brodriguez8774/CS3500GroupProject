@@ -1,5 +1,5 @@
 
-document.write("Hello World. Validate Form here.<br>");
+//document.write("Hello World. Validate Form here.<br>");
 
 // Get DOM elements.
 var formLogin = document.getElementsByName("login_form");
@@ -7,10 +7,10 @@ var formLoginUser = document.getElementsByName("login_ID");
 var formLoginPass = document.getElementsByName("login_pass");
 var formLoginSubmit = document.getElementsByName("login_submit");
 
-document.write(formLogin[0]);
-document.write(formLoginUser[0]);
-document.write(formLoginPass[0]);
-document.write(formLoginSubmit[0]);
+//document.write(formLogin[0]);
+//document.write(formLoginUser[0]);
+//document.write(formLoginPass[0]);
+//document.write(formLoginSubmit[0]);
 
 // Form validation event.
 if (formLogin[0] != null) {
