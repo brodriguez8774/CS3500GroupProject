@@ -77,6 +77,9 @@ header .placeholder {
   width: 10%; }
 header .login {
   width: 10%; }
+header div {
+  display: flex;
+  justify-content: center; }
 
 header a {
   color: #FCE1B0;
@@ -223,6 +226,14 @@ main p {
 main img {
   width: 100%;
   height: auto; }
+main table {
+  margin-right: auto;
+  margin-left: auto; }
+main th, main td {
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-left: 5px; }
 
 .menu {
   display: flex;
@@ -354,6 +365,11 @@ main #content {
   background-color: #cdd0c5;
   border-right: 2px solid #000;
   border-left: 2px solid #000; }
+
+main table {
+  border-collapse: collapse; }
+main table, main th, main td {
+  border: 1px solid #000; }
 
 .menu-item {
   background-color: #907544;

@@ -89,6 +89,18 @@ main {
         width: 100%;
         height: auto;
     }
+
+    table {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    th, td {
+        padding-top: 2px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+    }
 }
 
 //**************************************************
@@ -403,7 +415,16 @@ main {
 //START Generic Element Block
 //**************************************************
 
+main {
 
+    table {
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid $color-borders;
+    }
+}
 
 //**************************************************
 //END Generic Element Block
