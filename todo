@@ -10,15 +10,15 @@ TODO:
         Extra if time:
             * Possibly add "favorite foods"/"most purchased foods" and "card info" columns for customers?
             * Possibly modify customer and employee tables so that employees are an extension of customers, with extra fields?
+            * Ingredient table feels like it could be handled better. Look into.
 
     Pages: 
-        * Populate home page.
-	    * Create user info/settings pages, only accessible once logged in.
-        * Create employee view to access individual customer data.
+	    * Create user page for logged in customers
+        * Create more interesting employee login page. Perhaps allow selecting and editing of individual customer data?
 	
         Extra if time:
-            * Create order online page for logged in customers.
             * Create user registration page.
+            * Create order online page for logged in customers?
 
     General:
         * Figure out how to reference file structure based on root directory. Surely this has to be possible somehow.
@@ -48,8 +48,8 @@ Directroy structure:
 
 		: user
 			- settings.php
-			- customer.php
-			- employee.php
+			- customer.php (combine with employee into 'user.php' page?)
+			- employee.php (combine with customer into 'user.php' page?)
 
 		- about.php
 		- contact.php
