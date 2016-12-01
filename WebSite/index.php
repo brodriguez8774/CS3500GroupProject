@@ -15,6 +15,7 @@
       <?php
         include_once "templates/loginForm.inc.php";
       ?>
+      <h2>Coffee Shop Home</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum urna et ante luctus lacinia in hendrerit purus. Nulla in tortor rutrum est congue fermentum. Maecenas laoreet at ex non vestibulum. Fusce aliquam tincidunt ultrices. Duis in finibus neque. Quisque velit mi, ultrices sed viverra sed, accumsan sed metus. Nam a dapibus augue. Vestibulum sit amet tortor suscipit, vulputate nisi vel, auctor dui. Integer ullamcorper nisl eget elit rutrum porttitor sed eu risus. Quisque lacinia mollis massa non porttitor. Nullam ut consequat diam, vel vulputate felis. Praesent ullamcorper tellus nec libero iaculis tempor.
       </p>
